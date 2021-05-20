@@ -29,7 +29,7 @@ services:
         - "traefik.docker.network=traefik-public"
 
         # Access Router
-        - "traefik.http.routers.website.rule=Host(`${WEBSITE_HOSTNAME}`)"
+        - "traefik.http.routers.website.rule=Host(`silkky.cloud`)"
         - "traefik.http.routers.website.tls.certresolver=letsencrypt"
         - "traefik.http.routers.website.entrypoints=websecure"
         - "traefik.http.routers.website.middlewares=website-headers"
