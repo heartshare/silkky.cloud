@@ -6,3 +6,6 @@
   <em>Protecting your information and anonymity against global surveillance.</em>
 </p>
 </div>
+
+### Deploy
+```docker stack deploy -c <(docker-compose config) website```
