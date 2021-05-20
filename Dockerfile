@@ -24,4 +24,4 @@ EXPOSE 8080
 
 # Start app
 USER silkky
-CMD [ "npm", "run", "start:prod" ]
+CMD [ "node", "server.js" ]
