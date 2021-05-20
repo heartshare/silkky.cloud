@@ -1,4 +1,10 @@
-// Load Node modules
+'use strict';
+
+// Constraints
+const PORT = 8080;
+const HOST = '0.0.0.0';
+
+// Node App
 var express = require('express');
 const ejs = require('ejs');
 // Initialize Express
@@ -8,7 +14,9 @@ app.use(express.static('public'));
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 // Port website will run on
-app.listen(8080);
+
+app.listen(PORT, HOST);
+console.log(`silkky.cloud is alive http://${HOST}:${PORT}`);
 
 // GET Routes
 // Root Directory
