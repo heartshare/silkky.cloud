@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 // Port website will run on
 
 app.listen(PORT, HOST);
-console.log(`silkky.cloud is alive at http://${HOST}:${PORT}!`);
+console.log(`Silkky.Cloud is alive at http://${HOST}:${PORT}!`);
 
 // GET Routes
 // Root Directory
