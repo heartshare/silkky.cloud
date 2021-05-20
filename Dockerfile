@@ -1,5 +1,7 @@
 # Mount Node Alpine
+# NODE production
 FROM node:16-alpine
+ARG NODE_ENV=production
 
 WORKDIR /home/silkky/app
 
@@ -22,4 +24,4 @@ EXPOSE 8080
 
 # Start app
 USER silkky
-CMD [ "node", "server.js" ]
+CMD [ "npm", "run", "start:prod" ]
