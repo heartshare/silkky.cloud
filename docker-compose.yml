@@ -35,7 +35,7 @@ services:
         - "traefik.http.routers.website.middlewares=website-headers"
         - "traefik.http.routers.website.service=website-service"
         
-        # Bitwarden service
+        # Service
         - "traefik.http.services.website-service.loadbalancer.server.port=8080"
         - "traefik.http.services.website-service.loadbalancer.sticky.cookie=true"
         - "traefik.http.services.website-service.loadbalancer.sticky.cookie.secure=true"
