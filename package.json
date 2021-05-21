@@ -1,10 +1,10 @@
 {
   "name": "silkky.cloud",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Source code for silkky.cloud",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/TheSilkky/silkky.cloud/issues"
   },
-  "homepage": "https://github.com/TheSilkky/silkky.cloud#readme",
+  "homepage": "https://github.com/TheSilkky/silkky.cloud",
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
