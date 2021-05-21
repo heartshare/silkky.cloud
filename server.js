@@ -38,6 +38,11 @@ app.get('/help', function (req, res) {
   res.render('pages/help')
 });
 
+// About Directory
+app.get('/about', function (req, res) {
+  res.render('pages/about')
+});
+
 // Terms of Service Directory
 app.get('/tos', function (req, res) {
   res.render('pages/tos')
@@ -49,11 +54,6 @@ app.get('/privacy', function (req, res) {
 });
 
 // Legal Notice Directory
-app.get('/legal', function (req, res) {
-  res.render('pages/legal')
-});
-
-// OpenGraph
 app.get('/legal', function (req, res) {
   res.render('pages/legal')
 });
