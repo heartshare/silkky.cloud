@@ -1,57 +1,15 @@
-/*!
- * Start Bootstrap - Business Frontpage (https://startbootstrap.com/template/business-frontpage)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
- */
 body {
   padding-top: 56px;
-  background-color: #121212;;
+  background-color: #121212;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #fff;
-}
-
-p {
-  color: #fff;
-}
 .btn:focus {
   outline: none;
   box-shadow: none;
 }
 
-.card {
-  height: 100%;
-  background-color: #232323;
-}
-
-.navbar-custom {
-  background-color: #232323;
-}
-
-.bg-dark-custom {
-  background-color: #232323;
-}
-
-.badge-dark-custom {
-  background-color: #161819;
-}
-
-.dropdown-text-dark {
-  color: #656d7c;
-}
-
-.header-custom {
-  background-color: #121212;;
-}
-
 .break-all {
   word-break: break-all;
-}
-
-.custom-img {
-  height: 100px;
-  width: 100px;
 }
 
 .unselectable {
