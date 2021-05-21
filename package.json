@@ -1,6 +1,6 @@
 {
   "name": "silkky.cloud",
-  "version": "0.0.3",
+  "version": "0.1",
   "description": "Source code for silkky.cloud",
   "main": "server.js",
   "scripts": {
