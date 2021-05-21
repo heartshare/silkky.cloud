@@ -1,25 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
   <div class="container">
-    <a class="navbar-brand" href="../">
-      <img src="../assets/main/logo_text.png" width="110" height="30" class="d-inline-block align-top" alt="silkky.cloud">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="../">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="main_nav">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            More
-          </a>
-          <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" target="_blank" href="https://status.silkky.cloud/">Service Status</a>
-            <a class="dropdown-item" href="../help">Get Help</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../donate">Donate</a>
-        </li> 
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-dark-custom" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
