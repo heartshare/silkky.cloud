@@ -53,6 +53,11 @@ app.get('/legal', function (req, res) {
   res.render('pages/legal')
 });
 
+// OpenGraph
+app.get('/legal', function (req, res) {
+  res.render('pages/legal')
+});
+
 // Start App
 app.listen(PORT, HOST);
 console.log(`Silkky.Cloud is alive at http://${HOST}:${PORT}!`);
