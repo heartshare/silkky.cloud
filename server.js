@@ -1,9 +1,5 @@
 'use strict';
 
-// Constraints
-const PORT = 8080;
-const HOST = '0.0.0.0';
-
 // Node App
 var express = require('express');
 const ejs = require('ejs');
@@ -59,5 +55,5 @@ app.get('/legal', function (req, res) {
 });
 
 // Start App
-app.listen(PORT, HOST);
-console.log(`Silkky.Cloud is alive at http://${HOST}:${PORT}!`);
+app.listen(process.env.PORT || 8080);
+console.log(`Silkky.Cloud is alive!`);
