@@ -20,52 +20,68 @@ body
 
     .card-group
 
+      // Crypto donations
       .card.text-center.bg-dark
         .card-header
           h1.card-title
             span.badge.bg-secondary Crypto
         .card-body
           #Crypto.accordion.accordion-flush
+
+            // Monero
             .accordion-item
               h2#Crypto-1.accordion-header
                 button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#Crypto-1-1', aria-expanded='false', aria-controls='Crypto-1')
                   img(src='../assets/img/monero-text.svg', height='40', alt='Monero')
+              // Crypto-1 Data
               #Crypto-1-1.accordion-collapse.collapse(aria-labelledby='Crypto-1', data-bs-parent='#Crypto')
-                .accordion-body
-                  | 856E1v6ab4W3AEnkW8Zyd66SJ3ckwbACdLiiFNg1kZeT6Qx5YS3eGcCDwJwaBKh3os9EtdWw6GAwUfGh6UzcYxoVJ5HvgMu
+                .accordion-body 856E1v6ab4W3AEnkW8Zyd66SJ3ckwbACdLiiFNg1kZeT6Qx5YS3eGcCDwJwaBKh3os9EtdWw6GAwUfGh6UzcYxoVJ5HvgMu
+    
+            // Ethereum
             .accordion-item
               h2#Crypto-2.accordion-header
                 button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#Crypto-2-1', aria-expanded='false', aria-controls='Crypto-2')
                   img(src='../assets/img/ethereum-text.svg', height='40', alt='Ethereum')
+              // Crypto-2 Data
               #Crypto-2-1.accordion-collapse.collapse(aria-labelledby='Crypto-2', data-bs-parent='#Crypto')
                 .accordion-body 0xfdd4f4618902dc1f388bC58CceC9E622d7319Ff6
+        
+            // Bitcoin
             .accordion-item
               h2#Crypto-3.accordion-header
                 button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#Crypto-3-1', aria-expanded='false', aria-controls='Crypto-3')
                   img(src='../assets/img/bitcoin-text.svg', height='40', alt='Bitcoin')
+              // Crypto-3 Data
               #Crypto-3-1.accordion-collapse.collapse(aria-labelledby='Crypto-3', data-bs-parent='#Crypto')
                 .accordion-body bc1qjjzzm79gpaujyteu8yhjyxla0hhj224ppktyaa
-
+    
+      // Card donations
       .card.text-center.bg-dark
         .card-header
           h1.card-title
             span.badge.bg-secondary Card
         .card-body
           #Card.accordion.accordion-flush
+
+            // Liberapay
             .accordion-item
               h2#Card-1.accordion-header
                 button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#Card-1-1', aria-expanded='false', aria-controls='Card-1')
                   img(src='../assets/img/liberapay.svg', height='40', alt='liberapay')
+              // Card-1 data target
               #Card-1-1.accordion-collapse.collapse(aria-labelledby='Card-1', data-bs-parent='#Card')
                 .accordion-body
                   a(href='https://liberapay.com/silkkycloud/', target='_blank')
                     img(alt='Donate using Liberapay', src='../assets/img/liberapay-donate.svg')
                   br
                   | Donate with Liberapay to make a recurring donation.
+            
+            // Buymeacoffee
             .accordion-item
               h2#Card-2.accordion-header
                 button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#Card-2-1', aria-expanded='false', aria-controls='Card-2')
                   img(src='../assets/img/buymeacoffee-text.png', height='40', alt='Buymeacoffee')
+              // Card-2 data target
               #Card-2-1.accordion-collapse.collapse(aria-labelledby='Card-2', data-bs-parent='#Card')
                 .accordion-body
                   a(href='https://www.buymeacoffee.com/silkkycloud', target='_blank')
