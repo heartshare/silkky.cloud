@@ -6,14 +6,14 @@ const HOST = '0.0.0.0';
 
 // Node App
 var express = require('express');
-const ejs = require('ejs');
+const pug = require('pug');
 const path = require('path')
 // Initialize Express
 var app = express();
-// Render static files
-app.use(express.static('public'));
-// Set the view engine to ejs
-app.set('view engine', 'ejs');
+// Set Views directory for pug
+app.set('views', './views')
+// Set the view engine to pug
+app.set('view engine', 'pug');
 
 // Bootstrap
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')))
