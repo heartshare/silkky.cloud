@@ -32,7 +32,7 @@ services:
         - "traefik.http.routers.website.rule=Host(`silkky.cloud`)"
         - "traefik.http.routers.website.tls.certresolver=letsencrypt"
         - "traefik.http.routers.website.entrypoints=websecure"
-        - "traefik.http.routers.website.middlewares=website-headers, website-compress"
+        - "traefik.http.routers.website.middlewares=website-headers,website-compress"
         - "traefik.http.routers.website.service=website-service"
         
         # Service
