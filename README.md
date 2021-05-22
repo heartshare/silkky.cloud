@@ -13,6 +13,8 @@ To ensure security and accessibility we are keeping silkky.cloud up to date, if 
 
 Please join our discord to discuss features you want implemented into silkky.cloud. We welcome all contributions.
 
+:smile:
+
 <a href="https://discord.com/invite/BvqJQ3hNrQ">
   <img src="public/assets/img/discord.svg" width="100px" alt="Join our Discord" />
 </a>
