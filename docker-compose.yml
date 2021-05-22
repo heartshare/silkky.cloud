@@ -32,7 +32,7 @@ services:
         - "traefik.http.routers.website.rule=Host(`silkky.cloud`)"
         - "traefik.http.routers.website.tls.certresolver=letsencrypt"
         - "traefik.http.routers.website.entrypoints=websecure"
-        - "traefik.http.routers.website.middlewares=website-headers"
+        - "traefik.http.routers.website.middlewares=website-headers, website-compress"
         - "traefik.http.routers.website.service=website-service"
         
         # Service
@@ -40,7 +40,10 @@ services:
         - "traefik.http.services.website-service.loadbalancer.sticky.cookie=true"
         - "traefik.http.services.website-service.loadbalancer.sticky.cookie.secure=true"
 
-        # Headers
+        # Gzip Compression 
+        - "traefik.http.middlewares.website-compress.compress=true"
+
+        # CSP Headers
         - "traefik.http.middlewares.website-headers.headers.contentSecurityPolicy=default-src 'none'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://hedgedoc.silkky.cloud; object-src 'self'; frame-src 'self'; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; connect-src 'self'; frame-ancestors 'self';"
 
 networks:
