@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 // Bootstrap
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')))
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')))
-app.use('/js', express.static(path.join(__dirname, 'node_modules/@popperjs/dist/cjs')))
+app.use('/js', express.static(path.join(__dirname, 'node_modules/@popperjs/dist/esm')))
 // Icons
 app.use('/assets/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap-icons/icons')))
 
