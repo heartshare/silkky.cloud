@@ -1,0 +1,46 @@
+doctype html
+head
+  title Support
+
+  // Meta
+  include ../partials/meta.pug
+  // Scripts and Styles
+  include ../partials/link.pug
+
+body
+
+  // Navigation
+  include ../partials/nav.pug
+
+  .container.py-5
+
+    .card-header.text-center.text-white.border-info
+      h1 Support
+
+    .card-group
+
+      .card.bg-dark.text-center.text-white
+        .card-header
+          h1.card-title
+            span.badge.badge-dark-custom Ticket
+        .card-body
+          p.card-text
+            b For issues relating to accounts etc. This is the preferred method
+          p.card-text
+            | Please make sure to enter a valid email address otherwise you won&apos;t get a response.
+        .card-footer
+          a.btn.btn-light(href='https://support.silkky.cloud/help/3508421742', target='_blank') Open a Ticket
+
+    .card.bg-dark.text-center.text-white
+      .card-header
+        h1.card-title
+          span.badge.badge-dark-custom Discord
+      .card-body
+        p.card-text
+          b For ideas, technical issues etc. This is the preferred method
+      .card-footer
+        a(href='https://discord.gg/uCTfFQhWjR', target='_blank')
+          img.d-inline-block.align-top(src='../assets/img/discord.svg', height='50', alt='Join our Discord')
+
+  // Footer
+  include ../partials/footer.pug

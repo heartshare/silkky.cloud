@@ -1,0 +1,124 @@
+doctype html
+head
+  title Silkky.Cloud
+
+  // Meta
+  include ../partials/meta.pug
+  // Scripts and Styles
+  include ../partials/link.pug
+
+body 
+
+  // Navigation
+  include ../partials/nav.pug
+
+  // Page Content
+  .container
+
+    // Jumbotron
+    include ../partials/jumbotron.pug
+    include ../partials/alert.pug
+
+    .row.row-cols-1.row-cols-md-3.g-4
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Searx
+            p.card-text
+              | Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.
+          .card-footer
+            a.btn.btn-outline-light(href='https://searx.silkky.cloud/', target='_blank')
+              | Search! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title PrivateBin
+            p.card-text
+              | PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.
+          .card-footer
+            a.btn.btn-outline-light(href='https://privatebin.silkky.cloud', target='_blank')
+              | Paste! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Sharedrop
+            p.card-text
+              | ShareDrop is a free web app that allows you to easily and securely share files directly between devices without uploading them to any server first.
+          .card-footer
+            a.btn.btn-outline-light(href='https://drop.silkky.cloud', target='_blank')
+              | Drop! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Bitwarden
+            p.card-text
+              | Bitwarden offers the easiest and safest way for teams and individuals to store and share sensitive data from any device. Your private information is protected with end-to-end encryption before it ever leaves your device. 
+              a.link-light(href='https://hedgedoc.silkky.cloud/s/Q-3AMvzrr#', target='_blank') More information on security
+          .card-footer
+            a.btn.btn-outline-light(href='https://vault.silkky.cloud', target='_blank')
+              | Vault! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Invidious
+            p.card-text
+              | Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.
+          .card-footer
+            a.btn.btn-outline-light(href='https://invidious.silkky.cloud/', target='_blank')
+              | Watch! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Vikunja
+            p.card-text
+              | The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.
+          .card-footer
+            a.btn.btn-outline-light(href='https://tasks.silkky.cloud/', target='_blank')
+              | Organize! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title HedgeDoc
+            p.card-text
+              | The best platform to write and share markdown. HedgeDoc is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.
+          .card-footer
+            a.btn.btn-outline-light(href='https://hedgedoc.silkky.cloud', target='_blank')
+              | Markdown! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Etherpad
+            p.card-text Etherpad is a real-time collaborative rich text editor.
+          .card-footer
+            a.btn.btn-outline-light(href='https://pad.silkky.cloud/', target='_blank')
+              | Edit! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+      .col
+        .card.text-white.bg-dark.h-100
+          .card-body
+            h4.card-title Libreddit
+            p.card-text
+              | Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.
+          .card-footer
+            a.btn.btn-outline-light(href='https://libreddit.silkky.cloud/', target='_blank')
+              | Browse! 
+              svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
+                path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+
+  // Footer
+  include ../partials/footer.pug
