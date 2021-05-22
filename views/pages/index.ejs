@@ -3,23 +3,20 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="keywords" content="privacy, decentralization, open-source, web services, free, silkkycloud, silkky">
-  <meta name="description" content="We are dedicated to hosting open-source, privacy respecting, decentralized applications for the purpose of Protecting your information and anonymity against global surveillance.">
-  <meta property="og:image" content="https://silkky.cloud/assets/main/logo.png">
+  <title>Silkky.Cloud</title>
 
-  <title>silkky.cloud</title>
+  <!-- Meta -->
+  <%- include('../partials/meta') %>
 
-<!-- Scripts and Styles -->
-<%- include('../partials/link') %>
+  <!-- Scripts and Styles -->
+  <%- include('../partials/link') %>
 
 </head>
 
 <body>
   
-<!-- Navigation -->
-<%- include('../partials/nav') %>
+  <!-- Navigation -->
+  <%- include('../partials/nav') %>
 
   <br>
   <br>
@@ -29,6 +26,7 @@
 
     <!-- Jumbotron -->
     <%- include('../partials/jumbotron') %>
+    <%- include('../partials/alert') %>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
@@ -60,11 +58,11 @@
       <div class="col">
         <div class="card text-white bg-dark h-100">
           <div class="card-body">
-            <h4 class="card-title">Matrix</h4>
-            <p class="card-text"></a>Matrix is an open source project that publishes the Matrix open standard for secure, decentralized, real-time communication. Matrix provides end-to-end-encrypted messaging via Olm and Megolm.</p>
+            <h4 class="card-title">Sharedrop</h4>
+            <p class="card-text">ShareDrop is a free web app that allows you to easily and securely share files directly between devices without uploading them to any server first.</p>
           </div>
           <div class="card-footer">
-            <a href="https://chat.silkky.cloud" class="btn btn-outline-light" target="_blank">Chat! <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+            <a href="https://drop.silkky.cloud" class="btn btn-outline-light" target="_blank">Drop! <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
             </svg></a>
           </div>
@@ -86,7 +84,7 @@
       <div class="col">
         <div class="card text-white bg-dark h-100">
           <div class="card-body">
-            <h4 class="card-title">Invidious <span class="badge bg-danger">Down</span></h4>
+            <h4 class="card-title">Invidious</h4>
             <p class="card-text">Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.</p>
           </div>
           <div class="card-footer">
