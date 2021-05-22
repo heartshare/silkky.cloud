@@ -45,10 +45,10 @@ app.get('/about', function (req, res) {
   res.render('pages/about')
 });
 
-// // Terms of Service Directory
-// app.get('/tos', function (req, res) {
-//   res.render('pages/tos')
-// });
+// Terms of Service Directory
+app.get('/tos', function (req, res) {
+  res.render('pages/tos')
+});
 
 // Privacy Policy Directory
 app.get('/privacy', function (req, res) {
