@@ -6,6 +6,7 @@ const HOST = '0.0.0.0';
 
 // Node App
 var express = require('express');
+var helmet = require('helmet');
 const pug = require('pug');
 const path = require('path')
 // Initialize Express
@@ -16,6 +17,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', './views')
 // Set the view engine to pug
 app.set('view engine', 'pug');
+
+// Helmet
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 // Bootstrap
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')))
@@ -59,6 +67,17 @@ app.get('/privacy', function (req, res) {
 app.get('/legal', function (req, res) {
   res.render('pages/legal')
 });
+
+// Error Handling
+// 404
+app.use(function (req, res, next) {
+  res.status(404).render("error/404")
+})
+// 500
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('500 Internal Server Error. :(')
+})
 
 // Start App
 app.listen(PORT, HOST);
