@@ -1,0 +1,44 @@
+doctype html
+head
+  title Legal Notice
+
+  // Meta
+  include ../partials/meta.pug
+  // Scripts and Styles
+  include ../partials/link.pug
+
+body
+
+  // Navigation
+  include ../partials/nav.pug
+
+  .container.py-5
+
+    .card-header.text-center.text-white.border-info
+      h1 Legal Notice
+      p Legal contact info.
+
+    .card-group
+  
+      .card.text-center.text-white.bg-dark
+        .card-header
+          h1.card-title
+            span.badge.bg-secondary Information
+        .card-body
+          span.badge.bg-info Contact
+          br
+          p.card-text legal@silkky.cloud
+          span.badge.bg-info Info
+          p.card-text.unselectable
+            b Oscar Melton
+            br 
+            | 6 Benjamin Street 
+            br 
+            | 3831 Neerim South
+            br 
+            | Victoria 
+            br 
+            | Australia
+
+  // Footer
+  include ../partials/footer.pug

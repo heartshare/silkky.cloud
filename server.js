@@ -50,15 +50,15 @@ app.get('/about', function (req, res) {
 //   res.render('pages/tos')
 // });
 
-// // Privacy Policy Directory
-// app.get('/privacy', function (req, res) {
-//   res.render('pages/privacy')
-// });
+// Privacy Policy Directory
+app.get('/privacy', function (req, res) {
+  res.render('pages/privacy')
+});
 
-// // Legal Notice Directory
-// app.get('/legal', function (req, res) {
-//   res.render('pages/legal')
-// });
+// Legal Notice Directory
+app.get('/legal', function (req, res) {
+  res.render('pages/legal')
+});
 
 // Start App
 app.listen(PORT, HOST);
