@@ -38,3 +38,5 @@ Please join our discord to discuss features you want implemented into silkky.clo
 - ```npm start```
 
 6. **Start coding!** :smile:
+
+- **Important:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
