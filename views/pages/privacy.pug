@@ -124,5 +124,44 @@ body
             // Title
             p.fs-2.fw-bold Additional policies / exceptions
 
+            // Searx
+            .p-2
+              p.fs-4.fw-bold Searx 
+              p <b>Searx never logs any searches</b> and never builds a profile on users.
+
+            // PrivateBin
+            .p-2 
+              p.fs-4.fw-bold PrivateBin 
+              p Privatebin encrypts pastes on the client side using 256bit AES. <b>We are unable to decrypt or read any pastes.</b>
+
+            // Matrix
+            .p-2 
+              p.fs-4.fw-bold Matrix 
+              p <b>Matrix uses federation to provide communication across other servers / providers.</b> Data such as messages or files may be shared with other Matrix instances if a user communicates with another user outside of matrix.silkky.cloud. Please read Storage and Access to data for more information.
+
+            // Bitwarden
+            .p-2 
+              p.fs-4.fw-bold Bitwarden
+              p <b>Only hashed / encrypted data is stored on our server(s).</b> All data is hashed / encrypted on the client side first. We are unable to see your real password. See <a href="https://hedgedoc.silkky.cloud/s/Q-3AMvzrr#" target="_blank">Bitwarden security</a> for more information.
+
+            // HedgeDoc and Etherpad
+            .p-2 
+              p.fs-4.fw-bold HedgeDoc and Etherpad
+              p Content of documents are stored in plain text. <b>Don't upload anything important.</b>
+
+            // Invidious
+            .p-2 
+              p.fs-4.fw-bold Invidious
+              p Please read the <a href="https://invidious.silkky.cloud/privacy" target="_blank"><b>Invidious privacy policy.</b></a>
+
+        // Hetzner Online GmbH
+        .col 
+          .p-4.card.bg-dark.shadow
+            // TItle
+            p.fs-2.fw-bold Hetzner Online GmbH 
+            p Hetzner Online GmbH is our server provider, please read <a href="https://www.hetzner.com/rechtliches/datenschutz" target="_blank">their privacy policy.</a>
+            br
+            p <b>Hetzner Online GmbH may log access attempts to our server(s) this data may include IP address, user agent and bytes sent or received.</b> Our interest and the interest of Hetzner Online GmbH to process this data is to detect / block attacks and to provide our services. Processing this data is legitimate under Article 6 (1) b GDPR.
+
   // Footer
   include ../templates/static/footer.pug
