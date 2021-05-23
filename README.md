@@ -13,16 +13,28 @@ To ensure security and accessibility we are keeping silkky.cloud up to date, if 
 
 Please join our discord to discuss features you want implemented into silkky.cloud. We welcome all contributions.
 
-:smile:
-
 <a href="https://discord.com/invite/BvqJQ3hNrQ">
   <img src="public/assets/img/discord.svg" width="100px" alt="Join our Discord" />
 </a>
 
-**Install dependencies**
+#### Setup for Development
+
+1. **Fork this repository**
+
+2. **Clone your fork**
+
+3. **Create a new branch for your new feature**
+
+- ```git branch feature```
+
+-  ```git checkout feature```
+
+4. **Install dependencies**
 
 - ```npm install```
 
-**Start server**
+5. **Start server**
 
 - ```npm start```
+
+6. **Start coding!** :smile:
