@@ -4,7 +4,6 @@ services:
 
   sut:
     image: silkky/silkky.cloud:latest
-    command: test.sh
     container_name: silkkycloudtest
     restart: unless-stopped
     ports:
