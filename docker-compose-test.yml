@@ -2,7 +2,5 @@ version: '3.8'
 
 services:
 
-  server:
+  app:
     image: silkky/silkky.cloud:latest
-    networks:
-      - default
