@@ -76,7 +76,7 @@ app.use(function (req, res, next) {
 // 500
 app.use(function (err, req, res, next) {
   console.error(err.stack)
-  res.status(500).send('500 Internal Server Error. :(')
+  res.status(500).send('500 Server Error. If this issue persists, please create an issue: https://github.com/TheSilkky/silkky.cloud/issues')
 })
 
 // Start App
