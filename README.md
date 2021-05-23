@@ -11,7 +11,7 @@
 
 To ensure security and accessibility we are keeping silkky.cloud up to date, if there's a security vulnerability or any packages are out of date please don't hesitate to open an issue or pull request.
 
-Please join our discord to discuss features you want implemented into silkky.cloud. We welcome all contributions.
+Please join our discord to discuss features you want implemented into silkky.cloud. We welcome all contributions..
 
 <a href="https://discord.com/invite/BvqJQ3hNrQ">
   <img src="public/assets/img/discord.svg" width="100px" alt="Join our Discord" />
