@@ -43,6 +43,13 @@ body
       - var instanceButton = 'Watch!'
       include ../templates/dynamic/instance/instance.pug
 
+      // Libreddit
+      - var instanceTitle = 'Libreddit' 
+      - var instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
+      - var instanceUrl = 'https://libreddit.silkky.cloud/'
+      - var instanceButton = 'Browse!'
+      include ../templates/dynamic/instance/instance.pug
+
       // Bitwarden
       - var instanceTitle = 'Bitwarden' 
       - var instanceDesc = 'Bitwarden offers the easiest and safest way for teams and individuals to store and share sensitive data from any device. Your private information is protected with end-to-end encryption before it ever leaves your device.'
@@ -71,13 +78,6 @@ body
       - var instanceButton = 'Markdown!'
       include ../templates/dynamic/instance/instance.pug
 
-      // PrivateBin
-      - var instanceTitle = 'PrivateBin' 
-      - var instanceDesc = 'PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.'
-      - var instanceUrl = 'https://privatebin.silkky.cloud/'
-      - var instanceButton = 'Paste!'
-      include ../templates/dynamic/instance/instance.pug
-
       // Vikunja
       - var instanceTitle = 'Vikunja' 
       - var instanceDesc = 'The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.'
@@ -85,11 +85,11 @@ body
       - var instanceButton = 'Organize!'
       include ../templates/dynamic/instance/instance.pug
 
-      // Libreddit
-      - var instanceTitle = 'Libreddit' 
-      - var instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
-      - var instanceUrl = 'https://libreddit.silkky.cloud/'
-      - var instanceButton = 'Browse!'
+      // PrivateBin
+      - var instanceTitle = 'PrivateBin' 
+      - var instanceDesc = 'PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.'
+      - var instanceUrl = 'https://privatebin.silkky.cloud/'
+      - var instanceButton = 'Paste!'
       include ../templates/dynamic/instance/instance.pug
 
   // Footer
