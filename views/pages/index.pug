@@ -17,7 +17,10 @@ body
 
     // Jumbotron
     include ../templates/static/jumbotron.pug
-    include ../templates/static/alert.pug
+
+    - var alertMessage = 'Matrix is getting retired'
+    - var alertUrl = 'https://status.silkky.cloud/history' 
+    include ../templates/dynamic/alert/alert-warning.pug
 
     // Instances
     .row.row-cols-1.row-cols-md-3.g-4
