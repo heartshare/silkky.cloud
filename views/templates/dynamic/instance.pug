@@ -1,6 +1,7 @@
 .col
   .card.text-white.bg-dark.h-100
     case instanceType
+
       // Normal instance (default)
       when 0
         .card-body
@@ -12,6 +13,7 @@
             | #{instanceButton}
             svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
               path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+
       // Down instance
       when 1
         .card-body
@@ -23,6 +25,7 @@
             | #{instanceButton}
             svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
               path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+
       // Coming soon instance
       when 2
         .card-body
@@ -34,6 +37,7 @@
             | #{instanceButton}
             svg.bi.bi-arrow-up-right(xmlns='http://www.w3.org/2000/svg', width='14', height='14', fill='currentColor', viewbox='0 0 16 16')
               path(fill-rule='evenodd', d='M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z')
+              
       // New instance
       when 3
         .card-body
