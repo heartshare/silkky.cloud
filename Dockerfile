@@ -1,8 +1,9 @@
-LABEL org.opencontainers.image.source=https://github.com/silkkycloud/silkky.cloud
 # Mount Node Alpine
 # NODE production
 FROM node:16-alpine
 ARG NODE_ENV=production
+
+LABEL org.opencontainers.image.source=https://github.com/silkkycloud/silkky.cloud
 
 WORKDIR /home/silkky/app
 
