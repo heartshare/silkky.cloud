@@ -1,6 +1,7 @@
 doctype html
 head
 
+  // Meta tags
   block meta
     - var metaTitle = 'Silkky.Cloud'
     - var metaDesc = 'Protecting your information and anonymity against global surveillance.'
@@ -9,7 +10,8 @@ head
     - var twitterMetaTitle = 'Silkky.Cloud'
     - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
     include meta.pug
-    
+  
+  // Scripts and styles
   block scripts
     // Bootstrap core CSS
     link(href='../css/bootstrap.css', rel='stylesheet')
@@ -17,7 +19,6 @@ head
     link(href='../css/styles.css', rel='stylesheet')
     // Bootstrap core JavaScript
     script(src='../js/bootstrap.bundle.min.js')
-    script(src='../js/popper.js')
 
 body
 
