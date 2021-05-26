@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   server:
-    image: silkky/silkky.cloud:latest
+    image: ghcr.io/silkkycloud/silkky.cloud:latest
     hostname: website
     networks:
       - traefik-public
