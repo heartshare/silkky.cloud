@@ -1,7 +1,13 @@
 extends ../templates/base/structure.pug
 
-block title
-  title Legal Notice
+block meta
+  - var metaTitle = 'Legal Notice'
+  - var metaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var ogMetaTitle = 'Silkky.Cloud - Legal Notice'
+  - var ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var twitterMetaTitle = 'Silkky.Cloud - Legal Notice'
+  - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  include ../templates/base/meta.pug
 block contents  
   .py-5
     .card-header.text-center.text-white.border-info

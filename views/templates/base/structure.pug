@@ -1,25 +1,14 @@
 doctype html
 head
 
-  block title
-    title Silkky.Cloud
-
   block meta
-    // Favicon
-    link(rel='shortcut icon', href='../assets/main/favicon.ico')
-    meta(charset='utf-8')
-    // Meta
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='keywords', content='privacy, decentralization, open-source, web services, free, silkkycloud, silkky')
-    meta(name='description', content='Protecting your information and anonymity against global surveillance.')
-    // Opengraph meta
-    meta(property="og:title" content='Silkky.Cloud')
-    meta(property="og:description" content='Protecting your information and anonymity against global surveillance.')
-    meta(property='og:image', content='https://silkky.cloud/assets/main/logo_bg.png')
-    // Twitter meta
-    meta(name="twitter:title" content="Silkky.Cloud")
-    meta(name="twitter:description" content="Protecting your information and anonymity against global surveillance.")
-    meta(name="twitter:image" content="https://silkky.cloud/assets/main/logo_bg.png")
+    - var metaTitle = 'Silkky.Cloud'
+    - var metaDesc = 'Protecting your information and anonymity against global surveillance.'
+    - var ogMetaTitle = 'Silkky.Cloud'
+    - var ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+    - var twitterMetaTitle = 'Silkky.Cloud'
+    - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+    include meta.pug
     
   block scripts
     // Bootstrap core CSS

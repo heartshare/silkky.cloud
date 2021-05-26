@@ -1,7 +1,13 @@
 extends ../templates/base/structure.pug
 
-block title
-  title About
+block meta
+  - var metaTitle = 'About'
+  - var metaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var ogMetaTitle = 'Silkky.Cloud - About'
+  - var ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var twitterMetaTitle = 'Silkky.Cloud - About'
+  - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  include ../templates/base/meta.pug
 block contents
   .position-absolute.top-50.start-50.translate-middle.text-white
     svg.text-white.bi.bi-hammer(xmlns='http://www.w3.org/2000/svg', width='200', height='200', fill='currentColor', viewbox='0 0 16 16')

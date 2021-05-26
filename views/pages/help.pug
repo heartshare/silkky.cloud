@@ -1,7 +1,13 @@
 extends ../templates/base/structure.pug
 
-block title
-  title Support
+block meta
+  - var metaTitle = 'Support'
+  - var metaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var ogMetaTitle = 'Silkky.Cloud - Support'
+  - var ogMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  - var twitterMetaTitle = 'Silkky.Cloud - Support'
+  - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
+  include ../templates/base/meta.pug
 block contents
   .py-5
 

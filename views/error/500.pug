@@ -1,7 +1,13 @@
 extends ../templates/base/structure.pug
 
-block title
-  title 500 Server Error
+block meta
+  - var metaTitle = '500'
+  - var metaDesc = 'Server error.'
+  - var ogMetaTitle = 'Silkky.Cloud - 500'
+  - var ogMetaDesc = 'Server error.'
+  - var twitterMetaTitle = 'Silkky.Cloud - 500'
+  - var twitterMetaDesc = 'Server error.'
+  include ../templates/base/meta.pug
 block contents
   // Error Message
   .p-4.mb-4.mt-5.text-white.bg-dark.rounded-3
