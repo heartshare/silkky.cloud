@@ -1,24 +1,16 @@
-doctype html
-head
-  title Silkky.Cloud
+extends ../templates/dynamic/structure.pug
 
-  // Meta
-  include ../templates/static/meta.pug
-  // Scripts and Styles
-  include ../templates/static/link.pug
-
-body 
-    
-  .container
-
-    // Error Message
-    .p-4.mb-4.mt-5.text-white.bg-dark.rounded-3
-      .container-fluid.ps-4.py-5
-        div
-          // Title
-          a(href='../', type='button') < Return to safety
-          h1.display-1.fw-bold
-            .text-white 404
-          // Description
-          p.col-md-8.fs-4
-            | We can't find that :(
+block title
+  title 404
+block contents
+  // Error Message
+  .p-4.mb-4.mt-5.text-white.bg-dark.rounded-3
+    .container-fluid.ps-4.py-5
+      div
+        // Title
+        a(href='../', type='button') < Return to safety
+        h1.display-1.fw-bold
+          .text-white 404
+        // Description
+        p.col-md-8.fs-4
+          | We can't find that :(

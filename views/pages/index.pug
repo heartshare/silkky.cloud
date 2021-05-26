@@ -1,110 +1,93 @@
-doctype html
-head
-  title Silkky.Cloud
+extends ../templates/dynamic/structure.pug
 
-  // Meta
-  include ../templates/static/meta.pug
-  // Scripts and Styles
-  include ../templates/static/link.pug
+block contents
+  // Jumbotron
+  include ../templates/static/jumbotron.pug
 
-body 
+  - var alertType = 0
+  - var alertMessage = 'Matrix is getting retired'
+  - var alertUrl = 'https://status.silkky.cloud/history' 
+  include ../templates/dynamic/alert.pug
 
-  // Navigation
-  include ../templates/static/nav.pug
+  // Instances
+  .row.row-cols-1.row-cols-md-3.g-4
 
-  // Page Content
-  .container
+    // Searx
+    - var instanceType = 0
+    - var instanceTitle = 'Searx' 
+    - var instanceDesc = 'Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.'
+    - var instanceUrl = 'https://searx.silkky.cloud/'
+    - var instanceButton = 'Search!'
+    include ../templates/dynamic/instance.pug
 
-    // Jumbotron
-    include ../templates/static/jumbotron.pug
+    // Whoogle
+    - var instanceType = 3
+    - var instanceTitle = 'Whoogle' 
+    - var instanceDesc = 'Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Great alternative to Searx if you like the "Google" look.'
+    - var instanceUrl = 'https://whoogle.silkky.cloud/'
+    - var instanceButton = 'Search!'
+    include ../templates/dynamic/instance.pug
 
-    - var alertType = 1
-    - var alertMessage = 'Matrix is getting retired'
-    - var alertUrl = 'https://status.silkky.cloud/history' 
-    include ../templates/dynamic/alert.pug
+    // Invidious
+    - var instanceType = 0
+    - var instanceTitle = 'Invidious' 
+    - var instanceDesc = 'Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.'
+    - var instanceUrl = 'https://invidious.silkky.cloud/'
+    - var instanceButton = 'Watch!'
+    include ../templates/dynamic/instance.pug
 
-    // Instances
-    .row.row-cols-1.row-cols-md-3.g-4
+    // Libreddit
+    - var instanceType = 0
+    - var instanceTitle = 'Libreddit' 
+    - var instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
+    - var instanceUrl = 'https://libreddit.silkky.cloud/'
+    - var instanceButton = 'Browse!'
+    include ../templates/dynamic/instance.pug
 
-      // Searx
-      - var instanceType = 0
-      - var instanceTitle = 'Searx' 
-      - var instanceDesc = 'Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.'
-      - var instanceUrl = 'https://searx.silkky.cloud/'
-      - var instanceButton = 'Search!'
-      include ../templates/dynamic/instance.pug
+    // Bitwarden
+    - var instanceType = 0
+    - var instanceTitle = 'Bitwarden' 
+    - var instanceDesc = 'Bitwarden offers the easiest and safest way for teams and individuals to store and share sensitive data from any device. Your private information is protected with end-to-end encryption before it ever leaves your device.'
+    - var instanceUrl = 'https://vault.silkky.cloud/'
+    - var instanceButton = 'Vault!'
+    include ../templates/dynamic/instance.pug
 
-      // Whoogle
-      - var instanceType = 3
-      - var instanceTitle = 'Whoogle' 
-      - var instanceDesc = 'Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Great alternative to Searx if you like the "Google" look.'
-      - var instanceUrl = 'https://whoogle.silkky.cloud/'
-      - var instanceButton = 'Search!'
-      include ../templates/dynamic/instance.pug
+    // Sharedrop
+    - var instanceType = 2
+    - var instanceTitle = 'Sharedrop'
+    - var instanceDesc = 'ShareDrop is a free web app that allows you to easily and securely share files directly between devices without uploading them to any server first.'
+    - var instanceUrl = 'https://drop.silkky.cloud/'
+    - var instanceButton = 'Drop!'
+    include ../templates/dynamic/instance.pug
 
-      // Invidious
-      - var instanceType = 0
-      - var instanceTitle = 'Invidious' 
-      - var instanceDesc = 'Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.'
-      - var instanceUrl = 'https://invidious.silkky.cloud/'
-      - var instanceButton = 'Watch!'
-      include ../templates/dynamic/instance.pug
+    // Etherpad
+    - var instanceType = 0
+    - var instanceTitle = 'Etherpad' 
+    - var instanceDesc = 'Etherpad is a real-time collaborative rich text editor like Google Docs without any tracking.'
+    - var instanceUrl = 'https://pad.silkky.cloud/'
+    - var instanceButton = 'Edit!'
+    include ../templates/dynamic/instance.pug
 
-      // Libreddit
-      - var instanceType = 0
-      - var instanceTitle = 'Libreddit' 
-      - var instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
-      - var instanceUrl = 'https://libreddit.silkky.cloud/'
-      - var instanceButton = 'Browse!'
-      include ../templates/dynamic/instance.pug
+    // HedgeDoc
+    - var instanceType = 0
+    - var instanceTitle = 'HedgeDoc' 
+    - var instanceDesc = 'The best platform to write and share markdown. HedgeDoc is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.'
+    - var instanceUrl = 'https://hedgedoc.silkky.cloud/'
+    - var instanceButton = 'Markdown!'
+    include ../templates/dynamic/instance.pug
 
-      // Bitwarden
-      - var instanceType = 0
-      - var instanceTitle = 'Bitwarden' 
-      - var instanceDesc = 'Bitwarden offers the easiest and safest way for teams and individuals to store and share sensitive data from any device. Your private information is protected with end-to-end encryption before it ever leaves your device.'
-      - var instanceUrl = 'https://vault.silkky.cloud/'
-      - var instanceButton = 'Vault!'
-      include ../templates/dynamic/instance.pug
+    // Vikunja
+    - var instanceType = 0
+    - var instanceTitle = 'Vikunja' 
+    - var instanceDesc = 'The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.'
+    - var instanceUrl = 'https://tasks.silkky.cloud/'
+    - var instanceButton = 'Organize!'
+    include ../templates/dynamic/instance.pug
 
-      // Sharedrop
-      - var instanceType = 2
-      - var instanceTitle = 'Sharedrop'
-      - var instanceDesc = 'ShareDrop is a free web app that allows you to easily and securely share files directly between devices without uploading them to any server first.'
-      - var instanceUrl = 'https://drop.silkky.cloud/'
-      - var instanceButton = 'Drop!'
-      include ../templates/dynamic/instance.pug
-
-      // Etherpad
-      - var instanceType = 0
-      - var instanceTitle = 'Etherpad' 
-      - var instanceDesc = 'Etherpad is a real-time collaborative rich text editor like Google Docs without any tracking.'
-      - var instanceUrl = 'https://pad.silkky.cloud/'
-      - var instanceButton = 'Edit!'
-      include ../templates/dynamic/instance.pug
-
-      // HedgeDoc
-      - var instanceType = 0
-      - var instanceTitle = 'HedgeDoc' 
-      - var instanceDesc = 'The best platform to write and share markdown. HedgeDoc is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.'
-      - var instanceUrl = 'https://hedgedoc.silkky.cloud/'
-      - var instanceButton = 'Markdown!'
-      include ../templates/dynamic/instance.pug
-
-      // Vikunja
-      - var instanceType = 0
-      - var instanceTitle = 'Vikunja' 
-      - var instanceDesc = 'The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.'
-      - var instanceUrl = 'https://tasks.silkky.cloud/'
-      - var instanceButton = 'Organize!'
-      include ../templates/dynamic/instance.pug
-
-      // PrivateBin
-      - var instanceType = 0
-      - var instanceTitle = 'PrivateBin' 
-      - var instanceDesc = 'PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.'
-      - var instanceUrl = 'https://privatebin.silkky.cloud/'
-      - var instanceButton = 'Paste!'
-      include ../templates/dynamic/instance.pug
-
-  // Footer
-  include ../templates/static/footer.pug
+    // PrivateBin
+    - var instanceType = 0
+    - var instanceTitle = 'PrivateBin' 
+    - var instanceDesc = 'PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.'
+    - var instanceUrl = 'https://privatebin.silkky.cloud/'
+    - var instanceButton = 'Paste!'
+    include ../templates/dynamic/instance.pug

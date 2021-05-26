@@ -1,18 +1,9 @@
-doctype html
-head
+extends ../templates/dynamic/structure.pug
+
+block title
   title Support
-
-  // Meta
-  include ../templates/static/meta.pug
-  // Scripts and Styles
-  include ../templates/static/link.pug
-
-body
-
-  // Navigation
-  include ../templates/static/nav.pug
-
-  .container.py-5
+block contents
+  .py-5
 
     .card-header.text-center.text-white.border-info
       h1 Support
@@ -43,6 +34,3 @@ body
       .card-footer
         a(href='https://discord.gg/uCTfFQhWjR', target='_blank')
           img.d-inline-block.align-top(src='../assets/img/discord.svg', height='50', alt='Join our Discord')
-
-  // Footer
-  include ../templates/static/footer.pug

@@ -1,0 +1,34 @@
+doctype html
+head
+
+  block title
+    title Silkky.Cloud
+
+  block meta
+    link(rel='shortcut icon', href='../assets/main/favicon.ico')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='keywords', content='privacy, decentralization, open-source, web services, free, silkkycloud, silkky')
+    meta(name='description', content='Protecting your information and anonymity against global surveillance.')
+    meta(property='og:image', content='https://silkky.cloud/assets/main/logo_bg.png')
+    
+  block scripts
+    // Bootstrap core CSS
+    link(href='../css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='../css/styles.css', rel='stylesheet')
+    // Bootstrap core JavaScript
+    script(src='../js/bootstrap.bundle.min.js')
+    script(src='../js/popper.js')
+
+body
+
+  // Navigation
+  include ../static/nav.pug
+
+  // Page Content
+  .container
+    block contents
+
+  // Footer
+  include ../static/footer.pug

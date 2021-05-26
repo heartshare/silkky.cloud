@@ -1,18 +1,10 @@
-doctype html
-head
+extends ../templates/dynamic/structure.pug
+
+block title
   title Donate
+block contents
 
-  // Meta
-  include ../templates/static/meta.pug
-  // Scripts and Styles
-  include ../templates/static/link.pug
-
-body
-
-  // Navigation
-  include ../templates/static/nav.pug
-
-  .container.py-5
+  .py-5
 
     .card-header.text-center.text-white.border-warning
       h1 Donate
@@ -88,6 +80,3 @@ body
                     img(src='../assets/img/buymeacoffee-donate.png', alt='Buy Me A Coffee', style='height: 32.2727px !important;width: 116.6363px !important;')
                   br
                   | Donate with Buymeacoffee to make a one-time donation.
-
-  // Footer
-  include ../templates/static/footer.pug
