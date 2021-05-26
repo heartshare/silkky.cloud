@@ -48,13 +48,12 @@ jobs:
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
-      -
-        name: Login to GitHub Packages Container Registry
+      - name: Login to GitHub Packages Container Registry
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.LOGIN_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push image
         run: |
