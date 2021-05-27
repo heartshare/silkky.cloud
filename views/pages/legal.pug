@@ -10,23 +10,23 @@ block meta
   include ../templates/base/meta.pug
 block contents  
   // Container
-  .p-4.mb-4.mt-5.bg-dark.rounded-3
-    .container-fluid.py-3.text-white
+  .text-white
 
-      .row.row-cols-1.row-cols-md-1.g-4
-        // Primary
-        .col
-          .p-4.card.bg-dark.shadow
+    .row.row-cols-1.row-cols-md-1.g-4
+      // Primary
+      .col
+        .p-4.card.bg-dark
+          .ps-4.py-5
             // Title
             h1.display-4.fw-bold Legal Notice
             // Content
             p.col-md-8.fs-4 <b>Legal contact information</b>
 
-        // Contact
-        .col
-          .p-4.card.bg-dark.shadow
-            // Title
-            p.fs-2.fw-bold Contact
-            // Content
-            p Email Contact:
-            b legal@silkky.cloud
+      // Contact
+      .col
+        .p-4.card.bg-dark
+          // Title
+          p.fs-2.fw-bold Contact
+          // Content
+          p Email Contact:
+          b legal@silkky.cloud
