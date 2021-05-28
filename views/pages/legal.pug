@@ -9,41 +9,38 @@ block meta
   - var twitterMetaDesc = 'Protecting your information and anonymity against global surveillance.'
   include ../templates/base/meta.pug
 block contents  
-  // Container
-  .text-white
-
-    .row.row-cols-1.row-cols-md-1.g-4
-      // Primary
-      .col
-        .p-4.card.bg-dark
-          .ps-4.py-5
-            // Title
-            h1.display-4.fw-bold Legal Notice
-            // Content
-            p.col-md-8.fs-4 <b>Legal contact information</b>
-
-      // Contact
-      .col
-        .p-4.card.bg-dark
+  .row.row-cols-1.row-cols-md-1.g-4.text-white
+    // Primary
+    .col
+      .p-4.card.bg-dark
+        .ps-4.py-5
           // Title
-          p.fs-2.fw-bold Contact
+          h1.display-4.fw-bold Legal Notice
           // Content
-          b Email Contact:
-          p legal@silkky.cloud
-      
-      // Information
-      .col
-        .p-4.card.bg-dark 
-          // Title
-          p.fs-2.fw-bold Information
-            .unselectable
-              // Content
-              b Oscar Melton
-              p
-              | 6 Benjamin Street
-              br
-              | 3831 Neerim South
-              br
-              | Victoria
-              br 
-              | Australia
+          p.col-md-8.fs-4 <b>Legal contact information</b>
+
+    // Contact
+    .col
+      .p-4.card.bg-dark
+        // Title
+        p.fs-2.fw-bold Contact
+        // Content
+        b Email Contact:
+        p legal@silkky.cloud
+    
+    // Information
+    .col
+      .p-4.card.bg-dark 
+        // Title
+        p.fs-2.fw-bold Information
+          .unselectable
+            // Content
+            b Oscar Melton
+            p
+            | 6 Benjamin Street
+            br
+            | 3831 Neerim South
+            br
+            | Victoria
+            br 
+            | Australia
