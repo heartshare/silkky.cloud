@@ -13,7 +13,7 @@ block contents
   .p-4.mb-4.text-white.bg-dark.rounded-3
     .container-fluid.ps-4.py-5
       // Title
-      h1.display-4.fw-bold Contribute &#128640;
+      h1.display-4.fw-bold Contributing &#128640;
       // Content
       p.col-md-8.fs-4 Silkky.Cloud is a community project, to be as open and transparent as possible. 
       p No matter who you are or where you live, you can contribute in any way you like whether that's adding a new page to the site, suggesting a new service or a donation to help with server costs. If you want to discuss anything please <a href="https://discord.gg/BvqJQ3hNrQ" target="_blank">join our Discord</a> we are happy to help :)
@@ -53,19 +53,15 @@ block contents
 
   // Primary
   .row.row-cols-1.row-cols-md-1.g-4.text-white
-    // Guide to Contributing
-    .col
-      .p-4.card.bg-dark
-        // Title
-        h1#Contributing.fs-2.fw-bold Contributing
-        // Content
-        p example
 
     // Develop
     .col
       .p-4.card.bg-dark
         // Title
-        h1#Develop.fs-2.fw-bold Develop
+        h1#Develop.fs-2.fw-bold Develop 
+          // Develop icon
+          svg.bi.bi-code-slash(xmlns='http://www.w3.org/2000/svg', width='32', height='32', fill='currentColor', viewbox='0 0 16 16')
+            path(d='M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z')
         // Content
         p example
 
@@ -73,7 +69,11 @@ block contents
     .col
       .p-4.card.bg-dark
         // Title
-        h1#Donate.fs-2.fw-bold Donate
+        h1#Donate.fs-2.fw-bold Donate 
+          // Donate icon
+          svg.bi.bi-cash(xmlns='http://www.w3.org/2000/svg', width='32', height='32', fill='currentColor', viewbox='0 0 16 16')
+            path(d='M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z')
+            path(d='M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z')
         // Content
         p Donate to keep the IRS from following me &#128176;
 
