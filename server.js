@@ -39,8 +39,8 @@ app.get('/', function (req, res) {
 });
 
 // Donate Directory
-app.get('/donate', function (req, res) {
-  res.render('pages/donate')
+app.get('/contribute', function (req, res) {
+  res.render('pages/contribute')
 });
 
 // Help Directory
