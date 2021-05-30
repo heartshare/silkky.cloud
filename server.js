@@ -11,7 +11,6 @@ const path = require('path')
 
 // 
 const app = express();
-app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', './views')
 app.set('view engine', 'pug');
 
