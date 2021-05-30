@@ -3,13 +3,13 @@
 // Host
 const PORT = '8080';
 const HOST = '0.0.0.0';
-// App
+// App constraints
 const express = require('express');
 const helmet = require('helmet');
 const pug = require('pug');
 const path = require('path')
 
-// 
+// App
 const app = express();
 app.set('views', './views')
 app.set('view engine', 'pug');
