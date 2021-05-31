@@ -19,7 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')))
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')))
 app.use('/js', express.static(path.join(__dirname, 'node_modules/@popperjs/dist/esm')))
-app.use('/assets/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap-icons/icons')))
 
 // Web Server
 // This disables the `contentSecurityPolicy` middleware but keeps the rest.
