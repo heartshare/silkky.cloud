@@ -62,14 +62,6 @@ block contents
     - instanceButton = 'Search!'
     include ../templates/dynamic/instance.pug
 
-    // Whoogle
-    - instanceType = 3
-    - instanceTitle = 'Whoogle'
-    - instanceDesc = 'Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Great alternative to Searx if you like the "Google" look.'
-    - instanceUrl = 'https://whoogle.silkky.cloud/'
-    - instanceButton = 'Search!'
-    include ../templates/dynamic/instance.pug
-
     // Invidious
     - instanceType = 0
     - instanceTitle = 'Invidious'
@@ -78,12 +70,20 @@ block contents
     - instanceButton = 'Watch!'
     include ../templates/dynamic/instance.pug
 
-    // Libreddit
+    // Send
+    - instanceType = 3
+    - instanceTitle = 'Send'
+    - instanceDesc = 'Simple, private file sharing. Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.'
+    - instanceUrl = 'https://send.silkky.cloud/'
+    - instanceButton = 'Send!'
+    include ../templates/dynamic/instance.pug
+
+    // Vikunja
     - instanceType = 0
-    - instanceTitle = 'Libreddit'
-    - instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
-    - instanceUrl = 'https://libreddit.silkky.cloud/'
-    - instanceButton = 'Browse!'
+    - instanceTitle = 'Vikunja'
+    - instanceDesc = 'The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.'
+    - instanceUrl = 'https://tasks.silkky.cloud/'
+    - instanceButton = 'Organize!'
     include ../templates/dynamic/instance.pug
 
     // Bitwarden
@@ -94,12 +94,20 @@ block contents
     - instanceButton = 'Vault!'
     include ../templates/dynamic/instance.pug
 
-    // Sharedrop
-    - instanceType = 2
-    - instanceTitle = 'Sharedrop'
-    - instanceDesc = 'ShareDrop is a free web app that allows you to easily and securely share files directly between devices without uploading them to any server first.'
-    - instanceUrl = 'https://drop.silkky.cloud/'
-    - instanceButton = 'Drop!'
+    // Libreddit
+    - instanceType = 0
+    - instanceTitle = 'Libreddit'
+    - instanceDesc = 'Libreddit is a private front-end like Invidious but for Reddit. Browse the coldest takes of r/unpopularopinion without being tracked.'
+    - instanceUrl = 'https://libreddit.silkky.cloud/'
+    - instanceButton = 'Browse!'
+    include ../templates/dynamic/instance.pug
+
+    // Whoogle
+    - instanceType = 3
+    - instanceTitle = 'Whoogle'
+    - instanceDesc = 'Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Great alternative to Searx if you like the "Google" look.'
+    - instanceUrl = 'https://whoogle.silkky.cloud/'
+    - instanceButton = 'Search!'
     include ../templates/dynamic/instance.pug
 
     // Etherpad
@@ -116,14 +124,6 @@ block contents
     - instanceDesc = 'The best platform to write and share markdown. HedgeDoc is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.'
     - instanceUrl = 'https://hedgedoc.silkky.cloud/'
     - instanceButton = 'Markdown!'
-    include ../templates/dynamic/instance.pug
-
-    // Vikunja
-    - instanceType = 0
-    - instanceTitle = 'Vikunja'
-    - instanceDesc = 'The to-do app to organize your life. Vikunja is an open-source, self-hosted to-do list application for all platforms.'
-    - instanceUrl = 'https://tasks.silkky.cloud/'
-    - instanceButton = 'Organize!'
     include ../templates/dynamic/instance.pug
 
     // PrivateBin
