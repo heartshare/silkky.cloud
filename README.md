@@ -3,18 +3,28 @@
   <img src="public/assets/main/logo_bg.png" width="250px" alt="Silkky.Cloud" />
 </a>
 <p>
-  <em>Protecting your information and anonymity against global surveillance.</em>
+  <em>Protect your information and anonymity against global surveillance.</em>
 </p>
 </div>
 
-### Contributing
+## Contributing
 
-To ensure security and accessibility we are keeping silkky.cloud up to date, if there's a security vulnerability or any packages are out of date please don't hesitate to open an issue or pull request.
-
-Please join our discord to discuss features you want implemented into silkky.cloud. We welcome all contributions.
+<h3>Join on</h3>
 
 <a href="https://discord.com/invite/BvqJQ3hNrQ">
-  <img src="public/assets/img/discord.svg" width="100px" alt="Join our Discord" />
+  <img src="public/assets/img/discord.svg" height="35px" alt="Join our Discord" />
+</a>
+
+<a href="https://matrix.to/#/#silkkycloud:matrix.org" target="_blank">
+  <img src="https://matrix.org/images/matrix-logo-white.svg" height="35px" alt="Join our Matrix room" />
+</a>
+
+<h3>Donate</h3>
+<a href="https://www.buymeacoffee.com/silkkycloud" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="35px" alt="Buy Me A Coffee">
+</a>
+<a href="https://liberapay.com/silkkycloud/donate" target="_blank">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="35px">
 </a>
 
 #### Setup for Development
