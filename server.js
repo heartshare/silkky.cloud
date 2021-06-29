@@ -4,11 +4,12 @@ const helmet = require('helmet');
 const path = require('path');
 
 function hostCheck() {
-  if (process.env.NODE_ENV === 'production') {
-    return '0.0.0.0'
+  console.log(process.env.NODE_ENV)
+  if (process.env.NODE_ENV === 'development') {
+    return '127.0.0.1'
   }
   else {
-    return '127.0.0.1'
+    return '0.0.0.0'
   }
 }
 // Constraints
