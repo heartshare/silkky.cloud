@@ -22,8 +22,8 @@ RUN addgroup -S silkky \
   && chmod 700 /home/silkky/app \
   && chown -R silkky:silkky /home/silkky/
 
+USER silkky
 EXPOSE 8080
 
 # Start app
-USER silkky
 CMD [ "node", "server.js" ]

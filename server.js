@@ -1,80 +1,75 @@
 'use strict';
-const express = require('express');
-const helmet = require('helmet');
-const path = require('path');
+const fastify = require('fastify')({ logger: true });
+const upath = require('upath');
 
-function hostCheck() {
-  console.log(process.env.NODE_ENV)
-  if (process.env.NODE_ENV === 'development') {
-    return '127.0.0.1'
-  }
-  else {
-    return '0.0.0.0'
-  }
-}
-// Constraints
+// Application constraints
 const port = 8080;
-const host = hostCheck();
+const host = '0.0.0.0';
 
-const app = express();
-app.set('views', './views');
-app.set('view engine', 'pug');
+// fastify-helmet plugin for important security headers
+fastify.register(require('fastify-helmet'), { contentSecurityPolicy: false });
 
-// Static files 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
-app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
-app.use('/js', express.static(path.join(__dirname, 'node_modules/@popperjs/dist/esm')));
+// point-of-view plugin for pug
+fastify.register(require('point-of-view'), {
+    engine: {
+        pug: require('pug')
+    },
+    root: upath.join(process.cwd(), 'views'),
+});
 
-// This disables the `contentSecurityPolicy` middleware but keeps the rest.
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-  })
-);
+// fastify-static plugin for serving static files
+// 'public'
+fastify.register(require('fastify-static'), {root: upath.join(process.cwd(), 'public')});
+// 'node_modules'
+// Bootstrap javascript
+fastify.get('/js/bootstrap.min.js', async (request, reply) => {
+    return reply.sendFile('bootstrap.min.js', upath.join(process.cwd(), 'node_modules/bootstrap/dist/js'));
+});
+fastify.get('/js/bootstrap.min.js.map', async (request, reply) => {
+    return reply.sendFile('bootstrap.min.js.map', upath.join(process.cwd(), 'node_modules/bootstrap/dist/js'));
+});
+// Popperjs javascript
+fastify.get('/js/popper.min.js', async (request, reply) => {
+    return reply.sendFile('popper.min.js', upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd'));
+});
+fastify.get('/js/popper.min.js.map', async (request, reply) => {
+    return reply.sendFile('popper.min.js.map', upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd'));
+});
+// Bootstrap css
+fastify.get('/css/bootstrap.min.css', async (request, reply) => {
+    return reply.sendFile('bootstrap.min.css', upath.join(process.cwd(), 'node_modules/bootstrap/dist/css'));
+});
 
 // Routes
-// Root Directory
-app.get('/', function (req, res) {
-  res.render('pages/index');
-});
-// Donate Directory
-app.get('/contribute', function (req, res) {
-  res.render('pages/contribute');
-});
-// Help Directory
-app.get('/help', function (req, res) {
-  res.render('pages/help');
-});
-// About Directory
-app.get('/about', function (req, res) {
-  res.render('pages/about');
-});
-// Terms of Service Directory
-app.get('/tos', function (req, res) {
-  res.render('pages/tos');
-});
-// Privacy Policy Directory
-app.get('/privacy', function (req, res) {
-  res.render('pages/privacy');
-});
-// Legal Notice Directory
-app.get('/legal', function (req, res) {
-  res.render('pages/legal');
-});
-// Error Handling
-// 404
-app.use(function (req, res, next) {
-  res.status(404).render("error/404");
-})
-// 500
-app.use(function (req, res, err, next) {
-  console.error(err.stack);
-  res.status(500).render('error/500');
-  res.send('500 Server Error');
+// Index
+fastify.get('/', async (request, reply) => { return reply.view('pages/index'); });
+// Contribute
+fastify.get('/contribute', async (request, reply) => { return reply.view('pages/contribute'); });
+// Help
+fastify.get('/help', async (request, reply) => { return reply.view('pages/help'); });
+// About
+fastify.get('/about', async (request, reply) => { return reply.view('pages/about'); });
+// Terms of service
+fastify.get('/tos', async (request, reply) => { return reply.view('pages/tos'); });
+// Privacy policy
+fastify.get('/privacy', async (request, reply) => { return reply.view('pages/privacy'); });
+// Legal notice
+fastify.get('/legal', async (request, reply) => { return reply.view('pages/legal'); });
+
+// Error handling
+fastify.setNotFoundHandler(async (request, reply) => {
+    reply
+        .code(404)
+        .view('error/404')
 });
 
-// Start
-app.listen(port, host, () => {
-  console.log(`Silkky.Cloud is alive at http://${host}:${port}!`);
-});
+// Start!
+const start = async () => {
+    try {
+        await fastify.listen(port, host);
+    } catch (err) {
+        fastify.log.error(err);
+        process.exit(1);
+    }
+}
+start();

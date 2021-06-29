@@ -23,8 +23,11 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
-    "express": "^4.17.1",
-    "helmet": "^4.6.0",
-    "pug": "^3.0.2"
+    "fastify": "^3.18.1",
+    "fastify-helmet": "^5.3.1",
+    "fastify-static": "^4.2.2",
+    "point-of-view": "^4.15.0",
+    "pug": "^3.0.2",
+    "upath": "^2.0.1"
   }
 }
