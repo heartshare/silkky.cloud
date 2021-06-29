@@ -37,8 +37,6 @@ services:
         
         # Service
         - "traefik.http.services.website-service.loadbalancer.server.port=8080"
-        - "traefik.http.services.website-service.loadbalancer.sticky.cookie=true"
-        - "traefik.http.services.website-service.loadbalancer.sticky.cookie.secure=true"
 
         # Gzip Compression 
         - "traefik.http.middlewares.website-compress.compress=true"
