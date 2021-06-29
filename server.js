@@ -6,7 +6,6 @@ const HOST = '127.0.0.1';
 // App constraints
 const express = require('express');
 const helmet = require('helmet');
-const pug = require('pug');
 const path = require('path')
 
 // App
