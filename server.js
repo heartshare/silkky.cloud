@@ -39,6 +39,9 @@ fastify.get('/js/popper.min.js.map', async (request, reply) => {
 fastify.get('/css/bootstrap.min.css', async (request, reply) => {
     return reply.sendFile('bootstrap.min.css', upath.join(process.cwd(), 'node_modules/bootstrap/dist/css'));
 });
+fastify.get('/css/bootstrap.min.css.map', async (request, reply) => {
+    return reply.sendFile('bootstrap.min.css.map', upath.join(process.cwd(), 'node_modules/bootstrap/dist/css'));
+});
 
 // Routes
 // Index
