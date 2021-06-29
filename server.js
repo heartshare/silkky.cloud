@@ -2,7 +2,7 @@
 
 // Host
 const PORT = '8080';
-const HOST = '0.0.0.0';
+const HOST = '127.0.0.1';
 // App constraints
 const express = require('express');
 const helmet = require('helmet');
