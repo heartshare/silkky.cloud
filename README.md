@@ -29,8 +29,6 @@
 
 - ```npm start```
 
-6. **Start coding!** :smile:
-
 **Important Note:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 
 
