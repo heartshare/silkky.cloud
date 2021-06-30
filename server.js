@@ -1,10 +1,14 @@
 'use strict';
 const fastify = require('fastify')({ logger: true });
+const serveStatic = require('serve-static');
 const upath = require('upath');
 
 // Application constraints
 const port = 8080;
 const host = '0.0.0.0';
+
+// middie plugin to register express middleware
+fastify.register(require('middie'));
 
 // fastify-helmet plugin for important security headers
 fastify.register(require('fastify-helmet'), { contentSecurityPolicy: false });
@@ -15,32 +19,6 @@ fastify.register(require('point-of-view'), {
         pug: require('pug')
     },
     root: upath.join(process.cwd(), 'views'),
-});
-
-// fastify-static plugin for serving static files
-// 'public'
-fastify.register(require('fastify-static'), {root: upath.join(process.cwd(), 'public')});
-// 'node_modules'
-// Bootstrap javascript
-fastify.get('/js/bootstrap.min.js', async (request, reply) => {
-    return reply.sendFile('bootstrap.min.js', upath.join(process.cwd(), 'node_modules/bootstrap/dist/js'));
-});
-fastify.get('/js/bootstrap.min.js.map', async (request, reply) => {
-    return reply.sendFile('bootstrap.min.js.map', upath.join(process.cwd(), 'node_modules/bootstrap/dist/js'));
-});
-// Popperjs javascript
-fastify.get('/js/popper.min.js', async (request, reply) => {
-    return reply.sendFile('popper.min.js', upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd'));
-});
-fastify.get('/js/popper.min.js.map', async (request, reply) => {
-    return reply.sendFile('popper.min.js.map', upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd'));
-});
-// Bootstrap css
-fastify.get('/css/bootstrap.min.css', async (request, reply) => {
-    return reply.sendFile('bootstrap.min.css', upath.join(process.cwd(), 'node_modules/bootstrap/dist/css'));
-});
-fastify.get('/css/bootstrap.min.css.map', async (request, reply) => {
-    return reply.sendFile('bootstrap.min.css.map', upath.join(process.cwd(), 'node_modules/bootstrap/dist/css'));
 });
 
 // Routes
@@ -65,6 +43,25 @@ fastify.setNotFoundHandler(async (request, reply) => {
         .code(404)
         .view('error/404')
 });
+
+const staticFiles = async () => {
+    try {
+        // 'public'
+        fastify.use('/', serveStatic(upath.join(process.cwd(), 'public')));
+        // 'node_modules'
+        // Bootstrap javascript
+        fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/bootstrap/dist/js')));
+        // Popperjs javascript
+        fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd')));
+        // Bootstrap css
+        fastify.use('/css', serveStatic(upath.join(process.cwd(), 'node_modules/bootstrap/dist/css')));
+    } catch (err) {
+        fastify.log.error(err);
+        process.exit(1);
+    }
+}
+// serve-static middleware for serving static files
+fastify.register(staticFiles);
 
 // Start!
 const start = async () => {

@@ -1,11 +1,11 @@
 # Mount Node Alpine
 # NODE production
-FROM node:16-alpine
+FROM keymetrics/pm2:14-alpine
 ARG NODE_ENV=production
 
 LABEL org.opencontainers.image.source=https://github.com/silkkycloud/silkky.cloud
 
-WORKDIR /home/silkky/app
+WORKDIR /home/node/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -15,15 +15,8 @@ RUN npm ci --only=production
 # Copy app source
 COPY . .
 
-# Add user 
-# directory permissions
-RUN addgroup -S silkky \
-  && adduser -S silkky -G silkky \
-  && chmod 700 /home/silkky/app \
-  && chown -R silkky:silkky /home/silkky/
-
-USER silkky
+USER node
 EXPOSE 8080
 
 # Start app
-CMD [ "node", "server.js" ]
+CMD [ "pm2-runtime", "start", "pm2.json" ]
