@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include 'includes/head' %}
+<html class="h-100" lang="en">
+{% render 'includes/head' %}
 <body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-        <header>
-
-        </header>
-        {% block content %}
-        <p>content...</p>
-        {% endblock %}
-    </main>
-    <footer>
-
-    </footer>
-{% include 'includes/scripts' %}
+<main class="flex-shrink-0">
+    <header>
+    {% render 'includes/navbar' %}
+    </header>
+    {% block content %}
+    <p>content...</p>
+    {% endblock %}
+</main>
+{% render 'includes/footer' %}
+{% render 'includes/scripts' %}
 </body>
 </html>
