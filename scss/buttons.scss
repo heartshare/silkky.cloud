@@ -1,0 +1,18 @@
+.bi-button-icon {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.button-icon > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  transition: transform .25s ease-in-out;
+  fill: currentColor;
+}
+.button-icon:hover > .bi {
+  transform: translate(.25rem);
+}

@@ -5,11 +5,12 @@ const fastify = require('fastify')({
     }
 });
 const serveStatic = require('serve-static');
+const { Liquid } = require('liquidjs');
 const upath = require('upath');
 
 // Application constraints
 const port = 8080;
-const host = '0.0.0.0';
+const host = '127.0.0.1';
 
 // Serve static files
 const staticFiles = async () => {
@@ -21,6 +22,12 @@ const staticFiles = async () => {
         fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/bootstrap/dist/js')));
         // Popperjs javascript
         fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd')));
+        // Bootstrap icons
+        fastify.use('/css', serveStatic(upath.join(process.cwd(), '/node_modules/bootstrap-icons/font')));
+
+        // Fonts
+        fastify.use('/css', serveStatic(upath.join(process.cwd(), 'node_modules/@fontsource/bebas-neue')));
+        fastify.use('/css', serveStatic(upath.join(process.cwd(), 'node_modules/@fontsource/source-code-pro')));
 
         // Return the fastify object
         return fastify;
@@ -29,6 +36,11 @@ const staticFiles = async () => {
         process.exit(1);
     }
 }
+
+// Initialise Liquid
+const engine = new Liquid({
+    extname: '.liquid'
+})
 
 // Build web server
 const build = async () => {
@@ -43,9 +55,8 @@ const build = async () => {
         // point-of-view plugin for pug
         await fastify.register(require('point-of-view'), {
             engine: {
-                pug: require('pug')
-            },
-            root: upath.join(process.cwd(), 'views')
+                liquid: engine
+            }
         });
         // serve-static express middleware for serving static files
         await fastify.register(staticFiles);
@@ -53,25 +64,13 @@ const build = async () => {
         // Routes
         // Index
         fastify.get('/', async (request, reply) => { return reply.view('pages/index'); });
-        // Contribute
-        fastify.get('/contribute', async (request, reply) => { return reply.view('pages/contribute'); });
-        // Help
-        fastify.get('/help', async (request, reply) => { return reply.view('pages/help'); });
-        // About
-        fastify.get('/about', async (request, reply) => { return reply.view('pages/about'); });
-        // Terms of service
-        fastify.get('/tos', async (request, reply) => { return reply.view('pages/tos'); });
-        // Privacy policy
-        fastify.get('/privacy', async (request, reply) => { return reply.view('pages/privacy'); });
-        // Legal notice
-        fastify.get('/legal', async (request, reply) => { return reply.view('pages/legal'); });
 
         // 404 error handling
-        fastify.setNotFoundHandler(async (request, reply) => {
-            reply
-                .code(404)
-                .view('error/404')
-        });
+        //fastify.setNotFoundHandler(async (request, reply) => {
+            //reply
+                //.code(404)
+                //.view('error/404')
+        //});
 
         // Return the fastify object
         return fastify;

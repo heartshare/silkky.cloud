@@ -42,28 +42,13 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
+// include / content
+@import "content/hero";
+
 // Global styles
+@import "text";
+@import "buttons";
+
 body {
-  padding-top: 56px;
-  background-color: #191b1f;
-}
-
-.btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-.a:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.break-all {
-  word-break: break-all;
-}
-
-.unselectable {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: #141414;
 }

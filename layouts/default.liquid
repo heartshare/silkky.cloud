@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'includes/head' %}
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <header>
+
+        </header>
+        {% block content %}
+        <p>content...</p>
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+{% include 'includes/scripts' %}
+</body>
+</html>
