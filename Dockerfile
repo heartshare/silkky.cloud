@@ -32,7 +32,7 @@ RUN npm ci --only=production
 # Copy app source
 COPY . .
 # Copy css from builder image
-COPY --from=builder /home/node/app/public/css/styles.css ./public/css/styles.css
+COPY --from=builder /home/node/app/public/css ./public/css
 
 USER node
 EXPOSE 8080
