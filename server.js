@@ -9,7 +9,7 @@ const upath = require('upath');
 
 // Application constraints
 const port = 8080;
-const host = '127.0.0.1';
+const host = '0.0.0.0';
 
 // Serve static files
 const staticFiles = async () => {
