@@ -12,7 +12,6 @@ RUN npm install
 # Copy app source
 COPY . .
 
-USER node
 # Compile SCSS
 RUN npm run css
 
