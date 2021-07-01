@@ -21,8 +21,6 @@ const staticFiles = async () => {
         fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/bootstrap/dist/js')));
         // Popperjs javascript
         fastify.use('/js', serveStatic(upath.join(process.cwd(), 'node_modules/@popperjs/core/dist/umd')));
-        // Bootstrap css
-        fastify.use('/css', serveStatic(upath.join(process.cwd(), 'node_modules/bootstrap/dist/css')));
 
         // Return the fastify object
         return fastify;
