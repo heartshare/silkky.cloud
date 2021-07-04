@@ -12,6 +12,11 @@ const upath = require('upath');
 const port = 8080;
 const host = '127.0.0.1';
 
+// Initialise Liquid
+const engine = new Liquid({
+    extname: '.liquid'
+});
+
 // Serve static files
 const staticFiles = async () => {
     try {
@@ -37,11 +42,6 @@ const staticFiles = async () => {
     }
 }
 
-// Initialise Liquid
-const engine = new Liquid({
-    extname: '.liquid'
-})
-
 // Build web server
 const build = async () => {
     try {
@@ -66,11 +66,11 @@ const build = async () => {
         fastify.get('/', async (request, reply) => { return reply.view('pages/index'); });
 
         // 404 error handling
-        //fastify.setNotFoundHandler(async (request, reply) => {
-            //reply
-                //.code(404)
-                //.view('error/404')
-        //});
+        fastify.setNotFoundHandler(async (request, reply) => {
+            reply
+                .code(404)
+                .view('pages/404')
+        });
 
         // Return the fastify object
         return fastify;

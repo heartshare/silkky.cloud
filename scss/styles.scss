@@ -53,8 +53,14 @@ body {
   background-color: #141414;
 }
 nav {
-  background-color: #141414;
+  background-color: #000000;
 }
 .navbar-toggler {
   border: none
+}
+
+.bg-dropdown {
+  background-color: #141414;
+  border-color: #212529;
+  border-width: 1.5px;
 }
