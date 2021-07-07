@@ -54,8 +54,13 @@
 body {
   background-color: #141414;
 }
+
 nav {
   background-color: #000000;
+}
+
+* {
+  border-radius: 0 !important;
 }
 
 .bg-footer {
@@ -67,7 +72,13 @@ nav {
 }
 
 .bg-dropdown {
-  background-color: #141414;
+  background-color: #000000;
   border-color: #212529;
   border-width: 1.5px;
+}
+
+.silkky-button {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.3rem;
 }
