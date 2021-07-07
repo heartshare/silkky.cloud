@@ -5,6 +5,13 @@
 <p>
   <em>Protect your information and anonymity against global surveillance.</em>
 </p>
+<a href="https://www.buymeacoffee.com/silkkycloud" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
+</a>
+<a href="https://liberapay.com/silkkycloud/donate" target="_blank">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="30px">
+</a>
+
 </div>
 
 ## Contributing
@@ -25,23 +32,14 @@
 
 - ```npm install```
 
-5. **Start server**
+5. **Start development server**
 
 - ```npm start```
 
 **Important Note:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 
-
-### Join on
+### Talk to us
 
 [Discord](https://discord.com/invite/BvqJQ3hNrQ)
 
 [Matrix](https://matrix.to/#/#silkkycloud:matrix.org)
-
-### Donate
-<a href="https://www.buymeacoffee.com/silkkycloud" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="35px" alt="Buy Me A Coffee">
-</a>
-<a href="https://liberapay.com/silkkycloud/donate" target="_blank">
-  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="35px">
-</a>
