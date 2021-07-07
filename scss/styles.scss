@@ -44,6 +44,8 @@
 
 // include / content
 @import "content/hero";
+@import "content/jumbotron";
+@import "content/card";
 
 // Global styles
 @import "text";
@@ -55,6 +57,11 @@ body {
 nav {
   background-color: #000000;
 }
+
+.bg-footer {
+  background-color: #000000;
+}
+
 .navbar-toggler {
   border: none
 }
