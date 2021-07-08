@@ -82,3 +82,14 @@ nav {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.3rem;
 }
+
+// https://github.com/StartBootstrap/startbootstrap-modern-business/
+// Custom SCSS for feature component with Bootstrap icon
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}

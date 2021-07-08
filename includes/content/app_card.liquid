@@ -1,4 +1,5 @@
 <div class="bg-card card h-100 border border-1 border-dark">
+    <img class="card-img-top {% if app_card_custom_image_class %}{{ app_card_custom_image_class }}{% else %}{% endif %}" src="{% if app_card_image %}{{ app_card_image }}{% else %}{% endif %}"  alt="{% if app_card_image_alt %}{{ app_card_image_alt }}{% endif %}"/>
     <div class="card-body p-4">
         <a class="text-decoration-none link-light stretched-link" href="{% if app_card_link %}{{ app_card_link }}{% else %}https://www.silkky.cloud/{% endif %}" target="_blank">
             <h5 class="card-title mb-3">
@@ -8,8 +9,5 @@
         <p class="card-text leader-text text-muted mb-0">
             {% if app_card_description %}{{ app_card_description }}{% else %}No description :({% endif %}
         </p>
-    </div>
-    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-
     </div>
 </div>

@@ -5,11 +5,11 @@
 <p>
   <em>Protect your information and anonymity against global surveillance.</em>
 </p>
-<a href="https://www.buymeacoffee.com/silkkycloud" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
-</a>
 <a href="https://liberapay.com/silkkycloud/donate" target="_blank">
   <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="30px">
+</a>
+<a href="https://www.buymeacoffee.com/silkkycloud" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
 </a>
 
 </div>
