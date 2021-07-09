@@ -42,14 +42,8 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-// include / content
-@import "content/hero";
-@import "content/jumbotron";
-@import "content/card";
-
 // Global styles
 @import "text";
-@import "buttons";
 
 body {
   background-color: #141414;
@@ -86,10 +80,12 @@ nav {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.3rem;
 }
+
 .app-card {
   border-color: #212529;
   border-width: 1.5px;
 }
+
 .app-card:hover {
   border-color: #ffffff;
   border-width: 2px;
@@ -104,4 +100,61 @@ nav {
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+}
+
+.card-component {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-heading {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 2rem;
+}
+
+.bg-card {
+  background-color: #000000;
+}
+
+.bi-button-icon {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-icon > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  transition: transform .25s ease-in-out;
+  fill: currentColor;
+}
+
+.button-icon:hover > .bi {
+  transform: translate(.25rem);
+}
+
+.jumbotron {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.jumbotron-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+}
+
+.hero {
+  background-color: black;
+}
+.hero-button {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.7rem;
+}
+.hero-button:hover {
+  opacity: 85%;
 }

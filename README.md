@@ -35,6 +35,10 @@
 
 - ```npm install```
 
+5. **Build dist**
+
+- ```npm run build```
+
 5. **Start development server**
 
 - ```npm start```
