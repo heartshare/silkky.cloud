@@ -14,6 +14,9 @@
 
 </div>
 
+### Sponsors
+
+
 ## Contributing
 
 #### Setup for Development

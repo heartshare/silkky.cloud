@@ -11,6 +11,10 @@ const engine = new Liquid({
 engine.renderFile('pages/index').then(file => {
     fs.writeFile('dist/index.html', file);
 });
+// Applications
+engine.renderFile('pages/applications').then(file => {
+    fs.writeFile('dist/applications.html', file);
+});
 // 404
 engine.renderFile('pages/404').then(file => {
     fs.writeFile('dist/404.html', file);

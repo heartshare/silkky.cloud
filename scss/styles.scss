@@ -67,8 +67,8 @@ nav {
   background-color: #000000;
 }
 
-.bg-footer {
-  background-color: #000000;
+.bg-main {
+  background-color: #141414;
 }
 
 .navbar-toggler {
@@ -86,9 +86,17 @@ nav {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.3rem;
 }
+.app-card {
+  border-color: #212529;
+  border-width: 1.5px;
+}
+.app-card:hover {
+  border-color: #ffffff;
+  border-width: 2px;
+  margin: -1px;
+  overflow: hidden;
+}
 
-// https://github.com/StartBootstrap/startbootstrap-modern-business/
-// Custom SCSS for feature component with Bootstrap icon
 .feature {
   display: inline-flex;
   align-items: center;

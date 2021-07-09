@@ -1,6 +1,10 @@
 @import "../node_modules/@fontsource/bebas-neue";
 @import "../node_modules/@fontsource/source-code-pro";
 
+p {
+  font-family: "Source Code Pro", sans-serif;
+}
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
 }
@@ -8,6 +12,9 @@ h2 {
   font-family: "Bebas Neue", sans-serif;
 }
 h5 {
+  font-family: "Source Code Pro", sans-serif;
+}
+h6 {
   font-family: "Source Code Pro", sans-serif;
 }
 
