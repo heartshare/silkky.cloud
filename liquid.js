@@ -10,9 +10,17 @@ const engine = new Liquid({
 engine.renderFile('pages/index').then(file => {
     fs.writeFile('dist/index.html', file);
 });
+// Contribute
+engine.renderFile('pages/contribute').then(file => {
+    fs.writeFile('dist/contribute.html', file);
+});
 // Applications
 engine.renderFile('pages/applications').then(file => {
     fs.writeFile('dist/applications.html', file);
+});
+// Support
+engine.renderFile('pages/support').then(file => {
+    fs.writeFile('dist/support.html', file);
 });
 // Privacy Policy
 engine.renderFile('pages/privacy').then(file => {
