@@ -19,8 +19,8 @@ engine.renderFile('pages/applications').then(file => {
     fs.writeFile('dist/applications.html', file);
 });
 // Support
-engine.renderFile('pages/support').then(file => {
-    fs.writeFile('dist/support.html', file);
+engine.renderFile('pages/contact').then(file => {
+    fs.writeFile('dist/contact.html', file);
 });
 // Privacy Policy
 engine.renderFile('pages/privacy').then(file => {
