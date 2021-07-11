@@ -10,6 +10,10 @@ const engine = new Liquid({
 engine.renderFile('pages/index').then(file => {
     fs.writeFile('dist/index.html', file);
 });
+// Applications
+engine.renderFile('pages/applications').then(file => {
+    fs.writeFile('dist/applications.html', file);
+});
 // Privacy Policy
 engine.renderFile('pages/privacy').then(file => {
     fs.writeFile('dist/privacy.html', file);
