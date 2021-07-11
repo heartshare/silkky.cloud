@@ -42,119 +42,131 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-// Global styles
-@import "text";
+// Globals
+@import "variables";
+@import "mixins";
 
-body {
-  background-color: #141414;
-}
+// Fonts
+@import "../node_modules/@fontsource/source-code-pro";
+@import "../node_modules/@fontsource/bebas-neue";
 
-nav {
-  background-color: #000000;
-}
-
+// Globals
 * {
   border-radius: 0 !important;
 }
-
-.bg-black {
-  background-color: #000000;
+body {
+  background-color: $baseColor;
 }
 
-.bg-main {
-  background-color: #141414;
+// Colors
+// Base color
+.bg-base {
+  background-color: $baseColor;
+}
+// Alt color
+.bg-alt-color {
+  background-color: $baseAltColor;
 }
 
-.navbar-toggler {
-  border: none
+// Text defaults
+h1, h2, h3 {
+  font-family: $bebasNeue;
+}
+h4, h5, h6 {
+  font-family: $baseFont;
+}
+p, a {
+  font-family: $baseFont;
+  font-size: $baseFontSize;
 }
 
-.bg-dropdown {
-  background-color: #000000;
-  border-color: #212529;
-  border-width: 1.5px;
+// Navbar
+nav {
+  button.navbar-toggler {
+    border: none;
+  }
+  background-color: $baseAltColor;
+  ul.navbar-nav {
+    li {
+      a {
+        font-family: $bebasNeue;
+        font-size: $baseFontSize * 1.3;
+      }
+    }
+    li.dropdown {
+      ul.dropdown-menu {
+        background-color: $baseAltColor;
+        border: 1.5px solid $dark;
+        li {
+          a {
+            font-size: $baseFontSize;
+          }
+        }
+      }
+    }
+  }
 }
 
-.silkky-button {
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.3rem;
+// Footer
+footer {
+  background-color: $baseAltColor;
+  div.card {
+    background-color: $baseAltColor;
+  }
 }
 
-.app-card {
-  border-color: #212529;
-  border-width: 1.5px;
+// Features section
+#features {
+  // Feature cards
+  div.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: $baseFontSize * 1.4;
+  }
 }
 
-.app-card:hover {
-  border-color: #ffffff;
-  border-width: 2px;
-  margin: -1px;
-  overflow: hidden;
+// Applications section
+#applications {
+  // Applications heading
+  div.text-center.text-white {
+    p.lead.fw-normal.text-muted {
+      font-size: $baseFontSize * 1.2;
+    }
+    a.link-light.me-2.mb-5 {
+      font-family: $bebasNeue;
+      font-size: $baseFontSize * 1.5;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 85%;
+      }
+    }
+  }
+  // App cards
+  div.card.app-card.h-100 {
+    background-color: $baseAltColor;
+    border: 1.5px solid $dark;
+
+    &:hover {
+      border: 2px solid $light;
+      margin: -1px;
+    }
+  }
 }
 
-.feature {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.5rem;
-}
+// Hero section
+div.hero {
+  background-color: $baseAltColor;
+  a.hero-button {
+    text-decoration: none;
+    font-family: $bebasNeue;
+    font-size: $baseFontSize * 1.7;
 
-.card-component {
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-.card-heading {
-  font-family: "Source Code Pro", sans-serif;
-  font-size: 2rem;
-}
-
-.bg-card {
-  background-color: #000000;
-}
-
-.bi-button-icon {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.button-icon {
-  display: inline-flex;
-  align-items: center;
-}
-
-.button-icon > .bi {
-  margin-top: .125rem;
-  margin-left: .125rem;
-  transition: transform .25s ease-in-out;
-  fill: currentColor;
-}
-
-.button-icon:hover > .bi {
-  transform: translate(.25rem);
-}
-
-.jumbotron {
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-.jumbotron-heading {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
-}
-
-.hero {
-  background-color: black;
-}
-.hero-button {
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.7rem;
-}
-.hero-button:hover {
-  opacity: 85%;
+    &:hover {
+      opacity: 85%;
+    }
+  }
 }
