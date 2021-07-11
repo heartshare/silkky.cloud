@@ -12,6 +12,8 @@
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
 </a>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b10af1f4-8472-47cf-9702-82b2833d0a76/deploy-status)](https://app.netlify.com/sites/silkky-cloud/deploys)
+
 </div>
 
 ### Sponsors
