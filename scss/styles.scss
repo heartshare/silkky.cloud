@@ -50,7 +50,7 @@
 @import "../node_modules/@fontsource/source-code-pro";
 @import "../node_modules/@fontsource/bebas-neue";
 
-// Globals
+// Global styles
 * {
   border-radius: 0 !important;
 }
@@ -71,13 +71,14 @@ body {
 // Text defaults
 h1, h2, h3 {
   font-family: $bebasNeue;
+  color: $light;
 }
 h4, h5, h6 {
-  font-family: $baseFont;
+  color: $light;
 }
 p, a {
-  font-family: $baseFont;
   font-size: $baseFontSize;
+  color: $light;
 }
 
 // Navbar
@@ -117,6 +118,9 @@ footer {
 
 // Features section
 #features {
+  h4.text-white {
+    font-family: $bebasNeue;
+  }
   // Feature cards
   div.feature {
     display: inline-flex;
@@ -151,8 +155,10 @@ footer {
     border: 1.5px solid $dark;
 
     &:hover {
-      border: 2px solid $light;
-      margin: -1px;
+      border: 1.5px solid $light;
+    }
+    h4.card-title {
+      font-family: $bebasNeue;
     }
   }
 }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html class="h-100" lang="en">
-{% render 'includes/head' %}
+{% render 'includes/head',
+    page_title: page_title,
+    page_description: page_description
+%}
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
     <header>
