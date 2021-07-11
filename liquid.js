@@ -19,6 +19,10 @@ engine.renderFile('pages/privacy').then(file => {
 engine.renderFile('pages/tos').then(file => {
     fs.writeFile('dist/tos.html', file);
 });
+// Legal Notice
+engine.renderFile('pages/legal').then(file => {
+    fs.writeFile('dist/legal.html', file);
+});
 // 404
 engine.renderFile('pages/404').then(file => {
     fs.writeFile('dist/404.html', file);
