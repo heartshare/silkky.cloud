@@ -1,6 +1,5 @@
 'use strict';
 const { Liquid } = require('liquidjs');
-const upath = require('upath');
 const fs = require('graceful-fs');
 
 const engine = new Liquid({
