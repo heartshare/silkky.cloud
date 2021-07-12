@@ -16,9 +16,6 @@
 
 </div>
 
-### Sponsors
-
-
 ## Contributing
 
 #### Setup for Development
@@ -47,8 +44,17 @@
 
 **Important Note:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 
-### Talk to us
-
 [Discord](https://discord.com/invite/BvqJQ3hNrQ)
 
 [Matrix](https://matrix.to/#/#silkkycloud:matrix.org)
+
+## Sponsors
+
+<div>
+<a href="https://jb.gg/OpenSource" target="_blank">
+  <img src="public/assets/img/svg/jetbrains.svg" width="125px" alt="JetBrains">
+</a>
+<a href="https://www.netlify.com/" target="_blank">
+  <img src="public/assets/img/svg/netlify-color.svg" height="60px" alt="Netlify">
+</a>
+</div>
