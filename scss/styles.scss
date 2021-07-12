@@ -160,17 +160,18 @@ footer {
       }
     }
   }
-  // App cards
-  div.card.app-card.h-100 {
-    background-color: $baseAltColor;
-    border: 1.5px solid $dark;
+}
 
-    &:hover {
-      border: 1.5px solid $light;
-    }
-    h4.card-title {
-      font-family: $bebasNeue;
-    }
+// App cards
+.app-card {
+  background-color: $baseAltColor;
+  border: 1.5px solid $dark;
+
+  &:hover {
+    border: 1.5px solid $light;
+  }
+  h4.card-title {
+    font-family: $bebasNeue;
   }
 }
 
