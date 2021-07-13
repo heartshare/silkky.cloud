@@ -78,5 +78,5 @@ Static files (Copies files from 'node_modules' and 'public')
 **Thanks to JetBrains for supporting this project by providing free licenses for their development tools.**
 
 <a href="https://jb.gg/OpenSource" target="_blank">
-  <img src="public/assets/img/svg/jetbrains.svg" width="80px" alt="JetBrains">
+  <img src="public/assets/img/svg/jetbrains.svg" width="120px" alt="JetBrains">
 </a>
