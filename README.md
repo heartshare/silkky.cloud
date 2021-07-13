@@ -14,11 +14,15 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b10af1f4-8472-47cf-9702-82b2833d0a76/deploy-status)](https://app.netlify.com/sites/silkky-cloud/deploys)
 
+[Join our Matrix room](https://matrix.to/#/#silkkycloud:matrix.org)
+
+[Join our Discord](https://discord.com/invite/BvqJQ3hNrQ)
+
 </div>
 
 ## Contributing
 
-#### Setup for Development
+**Important:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 
 1. **Fork this repository**
 
@@ -30,31 +34,49 @@
 
 -  ```git checkout feature```
 
-4. **Install dependencies**
+4. **Install dependencies and build static site**
+
+- ```npm install```
+- ```npm run build```
+
+### Setup development server
+
+1. **Install dependencies**
 
 - ```npm install```
 
-5. **Build dist**
+2. **Build static site**
 
 - ```npm run build```
 
-5. **Start development server**
+3. **Start development server**
 
 - ```npm start```
 
-**Important Note:** Please sign your commits with GPG. [Guide](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
+4. **Go to** ```http://127.0.0.1:8080/```
 
-[Discord](https://discord.com/invite/BvqJQ3hNrQ)
+### Using build scripts
 
-[Matrix](https://matrix.to/#/#silkkycloud:matrix.org)
+To build the static site we use NPM scripts, for convenience each build is seperated into separate scripts.
 
-## Sponsors
+Full build:
 
-<div>
+- ```npm run build```
+
+Compile the Liquid files
+
+- ```npm run liquid```
+
+Compile the SASS / SCSS
+
+- ```npm run css```
+
+Static files (Copies files from 'node_modules' and 'public')
+
+- ```npm run static```
+
+**Thanks to JetBrains for supporting this project by providing free licenses for their development tools.**
+
 <a href="https://jb.gg/OpenSource" target="_blank">
-  <img src="public/assets/img/svg/jetbrains.svg" width="125px" alt="JetBrains">
+  <img src="http://127.0.0.1:8080/assets/img/svg/jetbrains.svg" width="80px" alt="JetBrains">
 </a>
-<a href="https://www.netlify.com/" target="_blank">
-  <img src="public/assets/img/svg/netlify-color.svg" height="60px" alt="Netlify">
-</a>
-</div>

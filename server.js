@@ -4,7 +4,7 @@ const upath = require('upath');
 
 // Constraints
 const port = '8080';
-const host = '192.168.1.118';
+const host = '127.0.0.1';
 const app = express();
 
 app.use(express.static(upath.join(process.cwd(), 'dist'), {
