@@ -7,7 +7,9 @@
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
     <header>
-    {% render 'includes/navbar' %}
+    {% render 'includes/navbar',
+        page: page
+    %}
     </header>
     {% block content %}
     <p>content...</p>

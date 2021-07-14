@@ -127,19 +127,18 @@ footer {
   }
 }
 
-// Features section
-#features {
-  h4.text-white {
-    font-family: $bebasNeue;
-  }
-  // Feature cards
-  div.feature {
+// Feature cards
+.feature {
+  div.border.border-dark.border-1.bg-alt-color.text-white.mb-3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 3rem;
     width: 3rem;
     font-size: $baseFontSize * 1.4;
+  }
+  h4.text-white {
+    font-family: $bebasNeue;
   }
 }
 
@@ -170,15 +169,15 @@ footer {
   &:hover {
     border: 1.5px solid $light;
   }
-  h4.card-title {
+  .card-title {
     font-family: $bebasNeue;
   }
 }
 
 // Hero section
-div.hero {
+.hero {
   background-color: $baseAltColor;
-  a.hero-button {
+  .hero-button {
     text-decoration: none;
     font-family: $bebasNeue;
     font-size: $baseFontSize * 1.7;
