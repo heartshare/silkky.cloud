@@ -2,7 +2,6 @@
 const express = require('express');
 const upath = require('upath');
 
-// Constraints
 const port = '8080';
 const host = '192.168.1.118';
 const app = express();

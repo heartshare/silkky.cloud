@@ -36,21 +36,16 @@
 //@import "../node_modules/bootstrap/scss/spinners";
 //@import "../node_modules/bootstrap/scss/offcanvas";
 
-// Helpers
 @import "../node_modules/bootstrap/scss/helpers";
 
-// Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-// Globals
 @import "variables";
 @import "mixins";
 
-// Fonts
 @import "../node_modules/@fontsource/source-code-pro";
 @import "../node_modules/@fontsource/bebas-neue";
 
-// Global styles
 * {
   border-radius: 0 !important;
 }
@@ -58,12 +53,9 @@ body {
   background-color: $baseColor;
 }
 
-// Colors
-// Base color
 .bg-base {
   background-color: $baseColor;
 }
-// Alt color
 .bg-alt-color {
   background-color: $baseAltColor;
 }
@@ -71,7 +63,6 @@ body {
   background-color: $baseAltColorLight;
 }
 
-// Text defaults
 h1, h2, h3 {
   font-family: $bebasNeue;
   color: $light;
@@ -84,7 +75,12 @@ p {
   color: $light;
 }
 
-// Classes
+.link-light {
+  &:hover {
+    opacity: 85%;
+  }
+}
+
 .unselectable {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -94,6 +90,11 @@ p {
 
 // Navbar
 nav {
+  a.navbar-brand {
+    &:hover {
+      opacity: 85%;
+    }
+  }
   button.navbar-toggler {
     border: none;
   }
@@ -119,7 +120,6 @@ nav {
   }
 }
 
-// Footer
 footer {
   background-color: $baseAltColor;
   div.card {
@@ -127,7 +127,6 @@ footer {
   }
 }
 
-// Feature cards
 .feature {
   div.border.border-dark.border-1.bg-alt-color.text-white.mb-3 {
     display: inline-flex;
@@ -142,9 +141,21 @@ footer {
   }
 }
 
-// Applications section
+#sponsors {
+  #netlify-sponsor {
+    &:hover {
+      opacity: 85%;
+    }
+  }
+  #jetbrains-sponsor {
+    &:hover {
+      opacity: 85%;
+    }
+  }
+}
+
+
 #applications {
-  // Applications heading
   div.text-center.text-white {
     p.lead.fw-normal.text-muted {
       font-size: $baseFontSize * 1.2;
@@ -161,7 +172,6 @@ footer {
   }
 }
 
-// App cards
 .app-card {
   background-color: $baseAltColor;
   border: 1.5px solid $dark;
@@ -174,7 +184,6 @@ footer {
   }
 }
 
-// Hero section
 .hero {
   background-color: $baseAltColor;
   .hero-button {
