@@ -16,4 +16,4 @@ app.use(function(req, res, next) {
 });
 
 app.listen(port, host);
-console.log(`THE_BORING_PROJECT is alive at http://${host}:${port}`);
+console.log(`THE SUPER FUCKING BORING PROJECT is alive at http://${host}:${port}`);
