@@ -88,6 +88,19 @@ p {
   user-select: none;
 }
 
+.btn-cool {
+  background-color: $baseAltColor;
+  border: 2.5px solid $dark;
+
+  font-family: $bebasNeue;
+  font-style: italic;
+  font-size: $baseFontSize * 1.5;
+
+  &:hover {
+    border: 2.5px solid $light;
+  }
+}
+
 // Navbar
 nav {
   a.navbar-brand {
