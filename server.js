@@ -9,7 +9,7 @@ app.use(express.static(upath.join(process.cwd(), 'dist'), {
     extensions: 'html'
 }));
 
-app.use(function(req, res, next) {
+app.use(function(req, res) {
     res.status(404);
     res.sendFile(upath.join(process.cwd(), 'dist/404.html'));
 });
