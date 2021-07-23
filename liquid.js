@@ -22,6 +22,10 @@ engine.renderFile('pages/applications').then(file => {
 engine.renderFile('pages/contact').then(file => {
     fs.writeFile('dist/contact.html', file);
 });
+// About
+engine.renderFile('pages/about').then(file => {
+    fs.writeFile('dist/about.html', file);
+});
 // Privacy Policy
 engine.renderFile('pages/privacy').then(file => {
     fs.writeFile('dist/privacy.html', file);
