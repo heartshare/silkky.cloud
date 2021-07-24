@@ -1,126 +1,16 @@
 {% layout 'layouts/default' %}
 {% block content %}
 {% render 'includes/content/hero' %}
-<!--Features Section-->
+<!--Features-->
 <section class="py-5" id="features">
-    <div class="container-md px-5 my-5">
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h1 class="mb-0 text-white">
-                    Built for everyone
-                </h1>
-            </div>
-            <div class="col-lg-8">
-                <div class="row gx-5 row-cols-1 row-cols-md-2">
-                    <div class="feature col mb-5 h-100">
-                        <div class="border border-dark border-1 bg-alt-color text-white mb-3">
-                            <i class="bi bi-shield-fill"></i>
-                        </div>
-                        <h4 class="text-white">Private</h4>
-                        <p class="mb-0 text-white">
-                            We will never share any personal data with third parties and we never collect any unnecessary data without your consent.
-                        </p>
-                    </div>
-                    <div class="feature col mb-5 h-100">
-                        <div class="border border-dark border-1 bg-alt-color text-white mb-3">
-                            <i class="bi bi-share-fill"></i>
-                        </div>
-                        <h4 class="text-white">Open Source</h4>
-                        <p class="mb-0 text-white">
-                            All applications and documentation hosted by us are licensed under ethical, free and open source licenses.
-                        </p>
-                    </div>
-                    <div class="feature col mb-5 h-100">
-                        <div class="border border-dark border-1 bg-alt-color text-white mb-3">
-                            <i class="bi bi-globe2"></i>
-                        </div>
-                        <h4 class="text-white">Community</h4>
-                        <p class="mb-0 text-white">
-                            Silkky.Cloud is not a commercial company and is 100% maintained by contributions from the community.
-                        </p>
-                    </div>
-                    <div class="feature col mb-5 h-100">
-                        <div class="border border-dark border-1 bg-alt-color text-white mb-3">
-                            <i class="bi bi-files-alt"></i>
-                        </div>
-                        <h4 class="text-white">Resources</h4>
-                        <p class="mb-0 text-white">
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% render 'includes/sections/index/features' %}
 </section>
-<!--Sponsors section-->
-<section class="py-5 bg-alt-color border-top border-bottom border-1 border-dark" id="sponsors">
-    <div class="container-md px-5 my-5">
-        <div class="row gx-5 mb-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6">
-                <div class="text-center text-white">
-                    <h1 class="fw-bolder">Sponsors</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-10 col-xl-7">
-                <div class="text-center">
-                    <div class="d-flex flex-wrap justify-content-around align-items-center">
-                        <!--Netlify-->
-                        <a class="m-3" href="https://www.netlify.com/" target="_blank" id="netlify-sponsor">
-                            <img src="assets/img/svg/netlify-color.svg" alt="JetBrains" height="60px">
-                        </a>
-                        <!--JetBrains-->
-                        <a class="m-3" href="https://jb.gg/OpenSource" target="_blank" id="jetbrains-sponsor">
-                            <img src="assets/img/svg/jetbrains.svg" alt="JetBrains" width="125px">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--Sponsors-->
+<section id="sponsors">
+    {% render 'includes/sections/index/sponsors' %}
 </section>
-<!--Applications section-->
-<section class="py-5 mt-5" id="applications">
-    <div class="container-md px-5 mb-5">
-        <div class="row gx-5 mb-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6">
-                <div class="text-center text-white">
-                    <h1 class="fw-bolder">Applications</h1>
-                    <p class="lead fw-normal text-muted">
-                        Web applications to help you protect your privacy
-                    </p>
-                    <a class="link-light me-2 mb-5" href="/applications">
-                        See more<i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--Application cards-->
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5">
-                {% render 'includes/content/app_card',
-                    app_card_link: 'https://searx.silkky.cloud/',
-                    app_card_title: 'Searx',
-                    app_card_description: 'Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.'
-                %}
-            </div>
-            <div class="col-lg-4 mb-5">
-                {% render 'includes/content/app_card',
-                    app_card_link: 'https://invidious.silkky.cloud/',
-                    app_card_title: 'Invidious',
-                    app_card_description: 'Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.'
-                %}
-            </div>
-            <div class="col-lg-4 mb-5">
-                {% render 'includes/content/app_card',
-                    app_card_link: 'https://send.silkky.cloud/',
-                    app_card_title: 'Send',
-                    app_card_description: 'Simple, private file sharing. Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.'
-                %}
-            </div>
-        </div>
-    </div>
+<!--Applications-->
+<section class="py-5" id="applications">
+    {% render 'includes/sections/index/applications' %}
 </section>
 {% endblock %}

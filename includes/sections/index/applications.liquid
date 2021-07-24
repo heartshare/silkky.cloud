@@ -1,0 +1,39 @@
+<div class="container-md px-5 mb-5 py-5">
+    <div class="row gx-5 mb-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <div class="text-center text-white">
+                <h1 class="fw-bolder">Applications</h1>
+                <p class="lead fw-normal text-muted">
+                    Web applications to help you protect your privacy
+                </p>
+                <a class="link-light me-2 mb-5" href="/applications">
+                    See more<i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Application cards-->
+    <div class="row gx-5">
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/content/card',
+                    app_card_link: 'https://searx.silkky.cloud/',
+                    app_card_title: 'Searx',
+                    app_card_description: 'Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.'
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/content/card',
+                    app_card_link: 'https://invidious.silkky.cloud/',
+                    app_card_title: 'Invidious',
+                    app_card_description: 'Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.'
+            %}
+        </div>
+        <div class="col-lg-4 mb-5">
+            {% render 'includes/content/card',
+                    app_card_link: 'https://send.silkky.cloud/',
+                    app_card_title: 'Send',
+                    app_card_description: 'Simple, private file sharing. Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.'
+            %}
+        </div>
+    </div>
+</div>

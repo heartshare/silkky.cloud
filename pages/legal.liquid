@@ -2,33 +2,8 @@
 {% assign page_title = "Legal Notice" %}
 {% assign page_description = "Our legal contact information." %}
 {% block content %}
+<!--Legal-->
 <section class="py-5" id="legal">
-    <div class="container-md my-5">
-        <div class="bg-alt-color border border-1 border-dark">
-            <div class="p-5 container-fluid">
-                <h1 class="display-2 fw-bolder">Legal Notice</h1>
-                <p class="fs-5 fw-bold">
-                    Legal contact information
-                </p>
-            </div>
-        </div>
-        <div class="mt-4 bg-alt-color border border-1 border-dark">
-            <div class="p-4 container-fluid">
-                <h4 class="display-6 fw-bold">Main</h4>
-                <p class="unselectable">
-                    <b>Oscar Melton</b><br />
-                    <br>
-                    <b>Mail Address: </b><br />
-                    PO Box 86<br />
-                    3831 Neerim South<br />
-                    Victoria<br />
-                    Australia<br />
-                    <br>
-                    <b>E-Mail Address: </b><br />
-                    silkky@silkky.cloud
-                </p>
-            </div>
-        </div>
-    </div>
+    {% render 'includes/sections/legal/legal' %}
 </section>
 {% endblock %}
