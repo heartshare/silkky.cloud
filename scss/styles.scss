@@ -187,10 +187,10 @@ footer {
 
 .app-card {
   background-color: $baseAltColor;
-  border: 1.5px solid $dark;
+  border: 2.5px solid $dark;
 
   &:hover {
-    border: 1.5px solid $light;
+    border: 2.5px solid $light;
   }
   .card-title {
     font-family: $bebasNeue;
