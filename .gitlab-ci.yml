@@ -1,4 +1,4 @@
-image: node:lts-alpine
+image: node:lts
 
 stages:
   - deploy
@@ -10,12 +10,12 @@ cache:
 before_script:
   - npm --version
   - node --version
-  - npm install netlify-cli -g
   - npm install
 
 pages:
   stage: deploy
   script:
+    - npm install netlify-cli -g
     - npm run build
     - netlify --version
     - netfliy deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir dist/
