@@ -16,7 +16,7 @@ setup:
     - node --version
     - npm ci
   only:
-    - develop
+    - develop # Temporary, will be changed to master once merged.
 
 build:
   stage: build
