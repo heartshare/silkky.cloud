@@ -10,17 +10,24 @@ cache:
 before_script:
   - npm --version
   - node --version
-  - npm install
-  - npm install -g --unsafe-perm=true netlify-cli
+  - npm ci
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+  only:
+    - develop
 
 pages:
   stage: deploy
   script:
-    - npm run build
-    - netlify --version
-    - npx netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod --dir dist/
-  artifacts:
-    paths:
-      - dist
+    - npm i -g --unsafe-perm=true netlify-cli
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+  dependencies:
+    - build
   only:
     - develop
