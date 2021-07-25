@@ -15,7 +15,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b10af1f4-8472-47cf-9702-82b2833d0a76/deploy-status)](https://app.netlify.com/sites/silkky-cloud/deploys)
 
 [Join our Matrix room](https://matrix.to/#/#silkkycloud:matrix.org)
-
+__
 [Join our Discord](https://discord.com/invite/BvqJQ3hNrQ)
 
 </div>
@@ -31,7 +31,6 @@
 3. **Create a new branch for your new feature**
 
 - ```git branch feature```
-
 -  ```git checkout feature```
 
 4. **Install dependencies and build static site**
@@ -53,7 +52,7 @@
 
 - ```npm start```
 
-4. **Go to** ```http://127.0.0.1:8080/```
+4. **Go to** ```http://localhost:8080/```
 
 ### Using build scripts
 
