@@ -14,8 +14,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b10af1f4-8472-47cf-9702-82b2833d0a76/deploy-status)](https://app.netlify.com/sites/silkky-cloud/deploys)
 
-[Join our Matrix room](https://matrix.to/#/#silkkycloud:matrix.org)
-__
+[Join our Matrix](https://matrix.to/#/#silkkycloud:matrix.org)
+
 [Join our Discord](https://discord.com/invite/BvqJQ3hNrQ)
 
 </div>
