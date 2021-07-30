@@ -1,3 +1,23 @@
 <script async src="https://ackee.silkky.cloud/ackeesilkky.js" data-ackee-server="https://ackee.silkky.cloud" data-ackee-domain-id="55590a76-d85d-4298-89dd-3f971e6b5709"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/popper.min.js"></script>
+{% if page %}
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        window.addEventListener('scroll', function() {
+            let navbar_height;
+            if (window.scrollY > 80) {
+                document.getElementById('subNavbar').classList.add('fixed-top');
+                // Add padding top to show content behind navbar
+                navbar_height = document.querySelector('#subNavbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('subNavbar').classList.remove('fixed-top');
+                // Remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+    // DOMContentLoaded  end
+</script>
+{% endif %}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark border-bottom border-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark border-bottom border-dark">
     <div class="container-md">
         <a class="navbar-brand" href="/">
             <img src="/assets/img/svg/brand/text-transparent.svg" alt="Silkky.Cloud" height="50">
@@ -33,3 +33,23 @@
         </div>
     </div>
 </nav>
+{% if page %}
+<div id="subNavbar" class="bg-alt-color-light border-bottom border-dark">
+    <div class="container-md pt-2">
+        <div class="d-flex align-items-center">
+            {% if page_title %}
+            <a class="navbar-brand" href="/">
+                <h2 class="fs-4"><i class="bi bi-arrow-left-short"></i>{{ page_title }}</h2>
+            </a>
+            {% endif %}
+            {% if page_description %}
+            <ul class="navbar-nav pt-1">
+                <li class="nav-item">
+                    <p class="fw-bold">{{ page_description }}</p>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}

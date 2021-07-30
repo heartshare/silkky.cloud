@@ -8,7 +8,9 @@
 <main class="flex-shrink-0">
     <header>
     {% render 'includes/navbar',
-        page: page
+        page: page,
+        page_title: page_title,
+        page_description: page_description
     %}
     </header>
     {% block content %}
@@ -16,6 +18,8 @@
     {% endblock %}
 </main>
 {% render 'includes/footer' %}
-{% render 'includes/scripts' %}
+{% render 'includes/scripts',
+    page: page
+%}
 </body>
 </html>
