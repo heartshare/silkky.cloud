@@ -1,0 +1,39 @@
+image: node:lts
+
+stages:
+  - setup
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+setup:
+  stage: setup
+  script:
+    - npm --version
+    - node --version
+    - npm ci
+  only:
+    - develop # Temporary, will be changed to master once merged.
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+  only:
+    - develop
+
+deploy:
+  stage: deploy
+  script:
+    - npm i -g --unsafe-perm=true netlify-cli
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+  dependencies:
+    - build
+  only:
+    - develop

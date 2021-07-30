@@ -26,7 +26,7 @@
 @import "../node_modules/bootstrap/scss/badge";
 @import "../node_modules/bootstrap/scss/alert";
 //@import "../node_modules/bootstrap/scss/progress";
-//@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/list-group";
 //@import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/toasts";
 //@import "../node_modules/bootstrap/scss/modal";
@@ -36,29 +36,49 @@
 //@import "../node_modules/bootstrap/scss/spinners";
 //@import "../node_modules/bootstrap/scss/offcanvas";
 
-// Helpers
 @import "../node_modules/bootstrap/scss/helpers";
 
-// Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-// Global styles
+@import "variables";
+@import "mixins";
+
+@import "../node_modules/@fontsource/source-code-pro";
+@import "../node_modules/@fontsource/bebas-neue";
+
+* {
+  border-radius: 0 !important;
+}
 body {
-  padding-top: 56px;
-  background-color: #191b1f;
+  background-color: $baseColor;
 }
 
-.btn:focus {
-  outline: none;
-  box-shadow: none;
+.bg-base {
+  background-color: $baseColor;
 }
-.a:focus {
-  outline: none;
-  box-shadow: none;
+.bg-alt-color {
+  background-color: $baseAltColor;
+}
+.bg-alt-color-light {
+  background-color: $baseAltColorLight;
 }
 
-.break-all {
-  word-break: break-all;
+h1, h2, h3 {
+  font-family: $bebasNeue;
+  color: $light;
+}
+h4, h5, h6 {
+  color: $light;
+}
+p {
+  font-size: $baseFontSize;
+  color: $light;
+}
+
+.link-light {
+  &:hover {
+    opacity: 85%;
+  }
 }
 
 .unselectable {
@@ -66,4 +86,126 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.btn-cool {
+  background-color: $baseAltColor;
+  border: 2.5px solid $dark;
+
+  font-family: $bebasNeue;
+  font-style: italic;
+  font-size: $baseFontSize * 1.5;
+
+  &:hover {
+    border: 2.5px solid $light;
+  }
+}
+
+// Navbar
+nav {
+  a.navbar-brand {
+    &:hover {
+      opacity: 85%;
+    }
+  }
+  button.navbar-toggler {
+    border: none;
+  }
+  background-color: $baseAltColor;
+  ul.navbar-nav {
+    li {
+      a {
+        font-family: $bebasNeue;
+        font-size: $baseFontSize * 1.3;
+      }
+    }
+    li.dropdown {
+      ul.dropdown-menu {
+        background-color: $baseAltColor;
+        border: 1.5px solid $dark;
+        li {
+          a {
+            font-size: $baseFontSize;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $baseAltColor;
+  div.card {
+    background-color: $baseAltColor;
+  }
+}
+
+.feature {
+  div.border.border-dark.border-1.bg-alt-color.text-white.mb-3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: $baseFontSize * 1.4;
+  }
+  h4.text-white {
+    font-family: $bebasNeue;
+  }
+}
+
+#sponsors {
+  #netlify-sponsor {
+    &:hover {
+      opacity: 85%;
+    }
+  }
+  #jetbrains-sponsor {
+    &:hover {
+      opacity: 85%;
+    }
+  }
+}
+
+
+#applications {
+  div.text-center.text-white {
+    p.lead.fw-normal.text-muted {
+      font-size: $baseFontSize * 1.2;
+    }
+    a.link-light.me-2.mb-5 {
+      font-family: $bebasNeue;
+      font-size: $baseFontSize * 1.5;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 85%;
+      }
+    }
+  }
+}
+
+.app-card {
+  background-color: $baseAltColor;
+  border: 2.5px solid $dark;
+
+  &:hover {
+    border: 2.5px solid $light;
+  }
+  .card-title {
+    font-family: $bebasNeue;
+  }
+}
+
+.hero {
+  background-color: $baseAltColor;
+  .hero-button {
+    text-decoration: none;
+    font-family: $bebasNeue;
+    font-size: $baseFontSize * 1.7;
+
+    &:hover {
+      opacity: 85%;
+    }
+  }
 }

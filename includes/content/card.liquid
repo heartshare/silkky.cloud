@@ -1,0 +1,12 @@
+<div class="card app-card h-100">
+    <div class="card-body p-4">
+        <a class="text-decoration-none link-light stretched-link" href="{% if app_card_link %}{{ app_card_link }}{% else %}https://www.silkky.cloud/{% endif %}" target="_blank">
+            <h4 class="card-title mb-3">
+                {% if app_card_title %}{{ app_card_title }}{% else %}No title :({% endif %}
+            </h4>
+        </a>
+        <p class="card-text leader-text text-muted mb-0">
+            {% if app_card_description %}{{ app_card_description }}{% else %}No description :({% endif %}
+        </p>
+    </div>
+</div>

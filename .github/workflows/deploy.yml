@@ -1,0 +1,44 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - master # Temporary, will be changed to master once merged.
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    name: Deploy to Netlify
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build dist
+        run: npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.2
+        with:
+          publish-dir: './dist'
+          deploy-message: 'Deployment v${{ github.ref }}'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          enable-commit-comment: true
+          enable-pull-request-comment: true
+          github-deployment-environment: 'Production'
+          github-deployment-description: 'Production website deployed at https://www.silkky.cloud/'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

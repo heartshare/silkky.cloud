@@ -1,15 +1,24 @@
 {
   "name": "silkky.cloud",
-  "version": "0.1.2",
+  "version": "0.3.0",
   "description": "Source code for silkky.cloud",
   "main": "server.js",
   "scripts": {
     "test": "exit 1",
     "start": "node server.js",
-    "css": "npm-run-all css-compile css-prefix css-minify",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/styles.scss:public/css/styles.css",
-    "css-prefix": "postcss public/css/styles.css --output public/css/styles.css",
-    "css-minify": "cleancss public/css/styles.css --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output public/css/styles.css"
+    "build": "npm-run-all static css liquid",
+    "static": "npm-run-all static-public static-node",
+    "static-public": "shx cp -r public/. dist",
+    "static-node": "npm-run-all static-node-bootstrap static-node-popperjs static-node-bootstrap-icons static-node-fontsource",
+    "static-node-bootstrap": "shx mkdir -p dist/js && shx cp -r node_modules/bootstrap/dist/js/bootstrap.min.js dist/js/bootstrap.min.js && shx cp -r node_modules/bootstrap/dist/js/bootstrap.min.js.map dist/js/bootstrap.min.js.map",
+    "static-node-popperjs": "shx mkdir -p dist/js && shx cp -r node_modules/@popperjs/core/dist/umd/popper.min.js dist/js/popper.min.js && shx cp -r node_modules/@popperjs/core/dist/umd/popper.min.js.map dist/js/popper.min.js.map",
+    "static-node-bootstrap-icons": "shx mkdir -p dist/icons/bootstrap-icons && shx cp -r node_modules/bootstrap-icons/font/. dist/icons/bootstrap-icons",
+    "static-node-fontsource": "shx mkdir -p dist/css/files && shx cp -r node_modules/@fontsource/bebas-neue/files/. dist/css/files && shx cp -r node_modules/@fontsource/source-code-pro/files/. dist/css/files",
+    "css": "shx mkdir -p dist/css && npm-run-all css-compile css-prefix css-minify",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/styles.scss:dist/css/styles.css",
+    "css-prefix": "postcss dist/css/styles.css --output dist/css/styles.css",
+    "css-minify": "cleancss dist/css/styles.css --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/styles.css",
+    "liquid": "node liquid.js"
   },
   "repository": {
     "type": "git",
@@ -25,23 +34,25 @@
   },
   "homepage": "https://github.com/TheSilkky/silkky.cloud",
   "dependencies": {
+    "@fontsource/bebas-neue": "^4.4.5",
+    "@fontsource/source-code-pro": "^4.4.5",
     "@popperjs/core": "^2.9.2",
-    "autoprefixer": "^10.3.1",
+    "autoprefixer": "^10.2.6",
     "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
     "clean-css": "^5.1.3",
     "clean-css-cli": "^5.3.0",
-    "fastify": "^3.19.2",
-    "fastify-helmet": "^5.3.2",
-    "fastify-static": "^4.2.2",
-    "middie": "^5.3.0",
+    "graceful-fs": "^4.2.6",
+    "liquidjs": "^9.25.1",
     "npm-run-all": "^4.1.5",
-    "pm2": "^5.1.0",
-    "point-of-view": "^4.15.1",
-    "postcss": "^8.3.6",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "pug": "^3.0.2",
-    "sass": "^1.35.2",
-    "serve-static": "^1.14.1",
+    "sass": "^1.35.1",
+    "shelljs": "^0.8.4",
+    "shx": "^0.3.3",
     "upath": "^2.0.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
   }
 }
