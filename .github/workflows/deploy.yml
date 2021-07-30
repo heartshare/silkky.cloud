@@ -31,7 +31,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.2.2
         with:
           publish-dir: './dist'
-          deploy-message: 'Deployment v${{ github.ref }}'
+          deploy-message: 'Deployment version: ${{ github.ref }}'
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           enable-commit-comment: true
