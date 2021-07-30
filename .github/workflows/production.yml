@@ -3,10 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - master # Temporary, will be changed to master once merged.
-  pull_request:
-    branches:
-      - develop
+      - master
 
 jobs:
   test:
