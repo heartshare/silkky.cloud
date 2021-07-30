@@ -47,7 +47,7 @@ jobs:
           name: dist
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@master
+        uses: nwtgck/actions-netlify@v1.2.2
         with:
           publish-dir: './dist'
           deploy-message: Production deployment v${{ github.ref }}
