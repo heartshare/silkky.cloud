@@ -3,11 +3,15 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - develop # Temporary, will be changed to master once merged.
+      - master # Temporary, will be changed to master once merged.
+  pull_request:
+    branches:
+      - develop
 
 jobs:
-  build:
-    name: Build the static files
+  deploy:
+    name: Deploy to Netlify
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
@@ -24,32 +28,17 @@ jobs:
       - name: Build dist
         run: npm run build
 
-      - name: Upload dist result
-        uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: './dist'
-
-  deploy:
-    name: Deploy to Netlify
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download dist result
-        uses: actions/download-artifact@v2
-        with:
-          name: dist
-
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2.2
         with:
           publish-dir: './dist'
-          deploy-message: Production deployment v${{ github.ref }}
-          production-deploy: true
+          deploy-message: 'Deployment v${{ github.ref }}'
+          production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-deployment-environment: production
-          github-deployment-description: Production website deployed at https://www.silkky.cloud/
+          enable-commit-comment: true
+          enable-pull-request-comment: true
+          github-deployment-environment: 'Production'
+          github-deployment-description: 'Production website deployed at https://www.silkky.cloud/'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
