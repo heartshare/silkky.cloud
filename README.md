@@ -6,10 +6,6 @@
   <em>Protect your information and anonymity against global surveillance.</em>
 </p>
 
-**This is the current Silkky.Cloud website**
-
-[![Deploy to Netlify](https://github.com/silkkycloud/silkky.cloud-placeholder/actions/workflows/production.yml/badge.svg)](https://demo.silkky.cloud/)
-
 <a href="https://liberapay.com/silkkycloud/donate" target="_blank">
   <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" height="30px">
 </a>
@@ -17,15 +13,9 @@
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
 </a>
 
-[Join our Matrix](https://matrix.to/#/#silkkycloud:matrix.org)
-
-[Join our Discord](https://discord.com/invite/BvqJQ3hNrQ)
+[![Deploy to Netlify](https://github.com/silkkycloud/silkky.cloud-placeholder/actions/workflows/production.yml/badge.svg)](https://demo.silkky.cloud/)
 
 </div>
-
-## What is this?
-
-This is a new placeholder website for [Silkky.Cloud](https://www.silkky.cloud/) with the same style as [our new website](https://demo.silkky.cloud) but with less content. Kind of a ***just for now*** website, if that makes sense :)
 
 ## Contributing
 
