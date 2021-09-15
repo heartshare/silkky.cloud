@@ -1,0 +1,6 @@
+dist
+node_modules
+
+# IDE project directories
+.idea
+.vscode
