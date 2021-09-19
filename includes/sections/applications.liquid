@@ -1,4 +1,4 @@
-<div class="container-md px-5 py-5">
+<div class="container-md px-5 pt-5 pb-3">
     <div class="row gx-5 mb-5 justify-content-center">
         <div class="col-lg-8 col-xl-6">
             <div class="text-center text-white">
@@ -11,9 +11,9 @@
     <div class="row gx-5">
         <!--Info bar-->
         {% render 'includes/dynamic/info',
-            info: false,
-            info_title: "HedgeDoc and Etherpad are leaving",
-            info_description: "Why? They do not support running in high availability, meaning they won't correctly when moving to a better server setup. Additionally, both HedgeDoc and Etherpad are relatively unpopular compared to other services. They will remain up for a while so you can back up any data you have."
+            info: true,
+            info_title: "New Servers",
+            info_description: "Recently we purchased 3 new servers. These new servers boost our total server performance by 4x, and will have major benefits to the stability and speed of all the services. Each instance will be moved to the new servers sometime in the next month. So don't be alarmed if an instance goes down for 30 minutes to an hour."
         %}
         <!--App cards-->
         <div class="col-lg-4 mb-5">
@@ -84,4 +84,12 @@
             %}
         </div>
     </div>
+    <!--<div class="mb-5">
+        <div class="bg-alt-color card h-100" id="info">
+            <div class="card-body">
+                <h2 class="fw-bold card-title"></h2>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>-->
 </div>
