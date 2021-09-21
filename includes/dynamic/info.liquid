@@ -2,7 +2,7 @@
 <div class="mb-5">
     <div class="border border-1 {% if danger == true %}border-danger{% endif %}">
         <div class="bg-alt-color card h-100" id="info">
-            <div class="card-body">
+            <div class="card-body p-4">
                 <h2 class="fw-bold card-title">
                     {% if info_title %}
                        > {{ info_title }}
@@ -10,7 +10,7 @@
                         Title
                     {% endif %}
                 </h2>
-                <p class="card-text">
+                <p class="card-text p-2">
                     {% if info_description %}
                         {{ info_description }}
                     {% else %}
