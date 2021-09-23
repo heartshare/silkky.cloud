@@ -4,7 +4,7 @@
   "description": "The Silkky.Cloud website",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "node ./index.js",
     "build": "npm-run-all static css html",
     "static": "npm-run-all static-public static-node",
     "static-public": "shx cp -r public/. dist",
@@ -52,11 +52,8 @@
     "shx": "^0.3.3"
   },
   "devDependencies": {
-    "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
     "graceful-fs": "^4.2.8",
-    "livereload": "^0.9.3",
-    "nodemon": "^2.0.12",
     "upath": "^2.0.1"
   }
 }
