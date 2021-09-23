@@ -18,25 +18,25 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 {% render 'includes/head',
-        page_title: page_title,
-        page_description: page_description
+    page_title: page_title,
+    page_description: page_description
 %}
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
-    <header>
+  <header>
     {% render 'includes/navbar',
-            page: page,
-            page_title: page_title,
-            page_description: page_description
+        page: page,
+        page_title: page_title,
+        page_description: page_description
     %}
-    </header>
-    {% block content %}
-    <p>Insert shit here....</p>
-    {% endblock %}
+  </header>
+  {% block content %}
+  <p>Insert shit here....</p>
+  {% endblock %}
 </main>
 {% render 'includes/footer' %}
 {% render 'includes/scripts',
-        page: page
+    page: page
 %}
 </body>
 </html>

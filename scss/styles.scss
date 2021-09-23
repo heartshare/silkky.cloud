@@ -161,9 +161,10 @@ footer {
   }
 }
 
-#app {
+.app-card {
   border: 1.5px solid $dark;
-
+  background-color: $baseAltColor;
+  text-align: center;
   &:hover {
     border: 1.5px solid #ffffff;
   }

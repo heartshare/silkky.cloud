@@ -1,0 +1,31 @@
+<!--{% if app_title %}{{ app_title }}{% endif %} Card-->
+<section class="app-card card h-100" id="{% if app_title %}app-{{ app_title }}{% endif %}">
+  <div class="py-3">
+    <div class="card-header {% if unstable == true %}text-danger{% else %}text-success{% endif %}">
+      {% if unstable == true %}<b>Unstable</b>{% else %}<b>stable</b>{% endif %}
+    </div>
+    <div class="card-body">
+      <a rel="noreferrer" class="text-decoration-none link-light stretched-link" href="{% if app_url %}{{ app_url }}{% else %}/{% endif %}" target="_blank">
+        <h3 class="card-title">
+          {% if app_title %}
+            {{ app_title }}
+          {% else %}
+            Title
+          {% endif %}
+        </h3>
+      </a>
+      <p class="card-text text-muted">
+        {% if app_description %}
+          {{ app_description }}
+        {% else %}
+          Description
+        {% endif %}
+      </p>
+    </div>
+    {% if unstable == true %}
+      <div class="card-footer text-danger">
+        {{ unstable_reason }}
+      </div>
+    {% endif %}
+  </div>
+</section>

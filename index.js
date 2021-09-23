@@ -7,14 +7,14 @@ const port = '8080';
 const app = express();
 
 app.use(express.static(upath.join(process.cwd(), 'dist'), {
-    extensions: 'html'
+  extensions: 'html'
 }));
 
 app.use(function (req, res) {
-    res.status(404);
-    res.sendFile(upath.join(process.cwd(), 'dist/404.html'));
+  res.status(404);
+  res.sendFile(upath.join(process.cwd(), 'dist/404.html'));
 });
 
 app.listen(port, () => {
-    console.log(`THE KINDA BORING PROJECT is alive at http://localhost:${port}`);
+  console.log(`THE KINDA BORING PROJECT is alive at http://localhost:${port}`);
 });
