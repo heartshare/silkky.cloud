@@ -12,8 +12,8 @@
         <!--Info bar-->
         {% render 'includes/dynamic/info',
             info: true,
-            info_title: "New Servers",
-            info_description: "Recently we purchased 3 new servers. These new servers boost our total server performance by 4x, and will have major benefits to the stability and speed of all the services. Each instance will be moved to the new servers sometime in the next month. So don't be alarmed if an instance goes down for 30 minutes to an hour."
+            info_title: "Piped will replace Invidious",
+            info_description: "Invidious will remain up for awhile so you backup any data you have. Piped is much more stable and uses a similar backend to the android application, newpipe."
         %}
         <!--App cards-->
         <div class="col-lg-4 mb-5">
@@ -27,11 +27,9 @@
         </div>
         <div class="col-lg-4 mb-5">
             {% render 'includes/dynamic/app',
-                    unstable: false,
-                    unstable_reason: "YouTube is completely blocking videos from playing :(",
-                    app_title: "Invidious",
-                    app_description: "Invidious is an alternative front-end to YouTube with no ads, no tracking and no google account.",
-                    app_url: "https://invidious.silkky.cloud"
+                    app_title: "Piped",
+                    app_description: "An alternative privacy-friendly YouTube frontend which is efficient by design.",
+                    app_url: "https://piped.silkky.cloud"
             %}
         </div>
         <div class="col-lg-4 mb-5">
