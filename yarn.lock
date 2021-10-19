@@ -280,19 +280,19 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
-clean-css-cli@^5.3.3:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.3.3.tgz#2ce11038240de9cc276d5a9585f3b15b80f17453"
-  integrity sha512-Reo/w25/3J2uRL4EFHvo92Tv97uhefyHranTpxXNqQ7iIRB8oxRNVlXC+Xcq8RWO2LjSyOofrb7AU6I6oXpPpA==
+clean-css-cli@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.4.1.tgz#3021fa61847490b9df48e74b714d9362851c3cea"
+  integrity sha512-LQLY8HKQP2d/M0FVbNfpoVbHMHh/ARIET2r80odAKuTN0RUOp8J8pU9eDlqMa1yezuUH3ipQxTVM/+vpunAhnA==
   dependencies:
-    clean-css "^5.1.5"
+    clean-css "^5.2.1"
     commander "7.x"
     glob "^7.1.6"
 
-clean-css@^5.1.5, clean-css@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.0.tgz#44e4a04e8873ff0041df97acecf23a4a6519844e"
-  integrity sha512-2639sWGa43EMmG7fn8mdVuBSs6HuWaSor+ZPoFWzenBc6oN+td8YhTfghWXZ25G1NiiSvz8bOFBS7PdSbTiqEA==
+clean-css@^5.2.0, clean-css@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.1.tgz#e5bdb1bee5f332c67e98cb6181251d4f88c0a6ab"
+  integrity sha512-ooQCa1/70oRfVdUUGjKpbHuxgMgm8BsDT5EBqBGvPxMoRoGXf4PNx5mMnkjzJ9Ptx4vvmDdha0QVh86QtYIk1g==
   dependencies:
     source-map "~0.6.0"
 
