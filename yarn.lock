@@ -1137,10 +1137,10 @@ lilconfig@^2.0.3:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.3.tgz#68f3005e921dafbd2a2afb48379986aa6d2579fd"
   integrity sha512-EHKqr/+ZvdKCifpNrJCKxBTgk5XupZA3y/aCPY9mxfgBzmgh93Mt/WqjjQ38oMxXuvDokaKiM3lAgvSH2sjtHg==
 
-liquidjs@^9.25.1:
-  version "9.25.1"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.25.1.tgz#1330e015158e9d7f0a24d4c063d2242049266f79"
-  integrity sha512-V6RYwuFsx13aKZ5ZrSUMHUgTPrEWpcP3GcafEkMdvlWVW9tTlQHOgBoJaK2HtLbOyvjXtaHXT82ZElwmRNY+Kw==
+liquidjs@^9.28.2:
+  version "9.28.2"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.2.tgz#2b3536adf7e4085da0e075c9c00bdd5f7dd2dac6"
+  integrity sha512-L84iu9dvEE4kHKoVR0YHANv7hsfRLxQ5zgKGCPuwr3aXuRLV9LAoFQKACBdSWeYtNYCw4t81XhCYBdf3lj/p7Q==
 
 livereload-js@^3.3.1:
   version "3.3.2"
@@ -1727,10 +1727,10 @@ safe-buffer@5.1.2:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.42.1:
-  version "1.42.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.42.1.tgz#5ab17bebc1cb1881ad2e0c9a932c66ad64e441e2"
-  integrity sha512-/zvGoN8B7dspKc5mC6HlaygyCBRvnyzzgD5khiaCfglWztY99cYoiTUksVx11NlnemrcfH5CEaCpsUKoW0cQqg==
+sass@^1.43.2:
+  version "1.43.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.2.tgz#c02501520c624ad6622529a8b3724eb08da82d65"
+  integrity sha512-DncYhjl3wBaPMMJR0kIUaH3sF536rVrOcqqVGmTZHQRRzj7LQlyGV7Mb8aCKFyILMr5VsPHwRYtyKpnKYlmQSQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
