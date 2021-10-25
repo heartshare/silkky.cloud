@@ -1,9 +1,9 @@
 'use strict';
 const { resolve } = require('upath');
-const { Liquid: Html } = require('liquidjs');
+const { Liquid } = require('liquidjs');
 const { readdirSync, writeFileSync } = require('graceful-fs');
 
-const engine = new Html({
+const engine = new Liquid({
     extname: '.liquid'
 });
 
