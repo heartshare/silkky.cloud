@@ -13,8 +13,6 @@
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30px" alt="Buy Me A Coffee">
 </a>
 
-[![Deploy to Netlify](https://github.com/silkkycloud/silkky.cloud-placeholder/actions/workflows/production.yml/badge.svg)](https://demo.silkky.cloud/)
-
 </div>
 
 ## Contributing
