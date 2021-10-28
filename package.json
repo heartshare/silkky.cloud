@@ -4,7 +4,7 @@
   "description": "The Silkky.Cloud website",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "node ./index.js",
     "build": "npm-run-all static css html",
     "static": "npm-run-all static-public static-node",
     "static-public": "shx cp -r public/. dist",
@@ -43,7 +43,7 @@
     "clean-css": "^5.2.0",
     "clean-css-cli": "^5.4.1",
     "fork-awesome": "^1.2.0",
-    "liquidjs": "^9.28.2",
+    "liquidjs": "^9.28.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
@@ -52,11 +52,8 @@
     "shx": "^0.3.3"
   },
   "devDependencies": {
-    "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
     "graceful-fs": "^4.2.8",
-    "livereload": "^0.9.3",
-    "nodemon": "^2.0.13",
     "upath": "^2.0.1"
   }
 }
