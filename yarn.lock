@@ -827,10 +827,10 @@ lilconfig@^2.0.3:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.3.tgz#68f3005e921dafbd2a2afb48379986aa6d2579fd"
   integrity sha512-EHKqr/+ZvdKCifpNrJCKxBTgk5XupZA3y/aCPY9mxfgBzmgh93Mt/WqjjQ38oMxXuvDokaKiM3lAgvSH2sjtHg==
 
-liquidjs@^9.28.3:
-  version "9.28.3"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.3.tgz#a663f49d9802284b3c34b9a976cb9c92d7f3871c"
-  integrity sha512-cgv92pgSyz7G+pEJRn2UqowrNWQvOrdAw1HvH2qgo4SXcfqJ5klYgaYEiwyr7BoNXxjye/IWw9spnT0LyMZoDg==
+liquidjs@^9.28.4:
+  version "9.28.4"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.4.tgz#7d71e1c848285389f64cefc781cc4498f47c135c"
+  integrity sha512-IqOqd5n5Rswvig9ebB4yM9FWpU5rDFrs907LmqyKuVIpBEDNhRCAqt4MtMFwYq+SZwg2ySLtn4HGNrgx1MskaA==
 
 load-json-file@^4.0.0:
   version "4.0.0"
