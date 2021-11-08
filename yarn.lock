@@ -121,10 +121,10 @@ body-parser@1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bootstrap-icons@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.6.1.tgz#66c87beff34840efa5f248b3091c82d9348864e8"
-  integrity sha512-MNpF89+njCdVJePDRbCd2DrUusqIyNsPlBrdKqBEXAvFZpwb+Gc8k2VlyF2ueiDQn1PoeTSg9UqQNgx8tGqHAA==
+bootstrap-icons@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.7.0.tgz#856afbfe35287a71638d9a1b96f67faf72bbb1b6"
+  integrity sha512-x2ORQ3lv1QdSnIzzQdU8mf83fbCq4FIaUinrAWw+a/d186vO3Ph7qUfqzvQDBA41AD6IoxdRHD6zUt9IXC1J6A==
 
 bootstrap@^5.1.3:
   version "5.1.3"
@@ -827,10 +827,10 @@ lilconfig@^2.0.3:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.3.tgz#68f3005e921dafbd2a2afb48379986aa6d2579fd"
   integrity sha512-EHKqr/+ZvdKCifpNrJCKxBTgk5XupZA3y/aCPY9mxfgBzmgh93Mt/WqjjQ38oMxXuvDokaKiM3lAgvSH2sjtHg==
 
-liquidjs@^9.28.3:
-  version "9.28.3"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.3.tgz#a663f49d9802284b3c34b9a976cb9c92d7f3871c"
-  integrity sha512-cgv92pgSyz7G+pEJRn2UqowrNWQvOrdAw1HvH2qgo4SXcfqJ5klYgaYEiwyr7BoNXxjye/IWw9spnT0LyMZoDg==
+liquidjs@^9.28.4:
+  version "9.28.4"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.4.tgz#7d71e1c848285389f64cefc781cc4498f47c135c"
+  integrity sha512-IqOqd5n5Rswvig9ebB4yM9FWpU5rDFrs907LmqyKuVIpBEDNhRCAqt4MtMFwYq+SZwg2ySLtn4HGNrgx1MskaA==
 
 load-json-file@^4.0.0:
   version "4.0.0"
