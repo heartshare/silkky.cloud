@@ -11,9 +11,9 @@
     <div class="row gx-5">
         <!--Info bar-->
         {% render 'includes/dynamic/info',
-            info: false,
-            info_title: "",
-            info_description: ""
+            info: true,
+            info_title: "Temporary removal of Searx and PrivateBin instances",
+            info_description: "They won't be down forever, they will be up again in a few months."
         %}
         <!--App cards-->
         <div class="col-lg-4 mb-5">
@@ -35,15 +35,6 @@
                 app_title: "Send",
                 app_description: "Simple, private file sharing. Send lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn’t stay online forever.",
                 app_url: "https://send.silkky.cloud"
-            %}
-        </div>
-        <div class="col-lg-4 mb-5">
-            {% render 'includes/dynamic/app',
-                unstable: false,
-                unstable_reason: "Some search engines are blocking requests :(",
-                app_title: "Searx",
-                app_description: "Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.",
-                app_url: "https://searx.silkky.cloud"
             %}
         </div>
         <div class="col-lg-4 mb-5">
@@ -74,13 +65,20 @@
                 app_url: "https://nitter.silkky.cloud"
             %}
         </div>
+        <!--<div class="col-lg-4 mb-5">
+            {% render 'includes/dynamic/app',
+                app_title: "Searx",
+                app_description: "Searx is a privacy-respecting metasearch engine that aggregates results from other search engines (duckduckgo, google etc). Results are proxied so your ip address is never exposed.",
+                app_url: "https://searx.silkky.cloud"
+            %}
+        </div>
         <div class="col-lg-4 mb-5">
             {% render 'includes/dynamic/app',
                 app_title: "Privatebin",
                 app_description: "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted in the browser using 256bit AES.",
                 app_url: "https://privatebin.silkky.cloud"
             %}
-        </div>
+        </div>-->
     </div>
     <!--<div class="mb-5">
         <div class="bg-alt-color card h-100" id="info">
