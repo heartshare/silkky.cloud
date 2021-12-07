@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/bebas-neue/-/bebas-neue-4.5.0.tgz#f12c97a7702bd986152631175d00963892aba560"
   integrity sha512-n1q39krvjIw4gPbxmEa7hYYu1DJkzrKAlqYM2GqGKVRzTrXX0/riVJw/9/KKgK5yreAf5ERBsEv+QhfdyNsuOg==
 
-"@fontsource/source-code-pro@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.5.0.tgz#0dabcefeb7ff0ded884f1113a86473eebe5aac95"
-  integrity sha512-IKB+oQfwjj9DzEM2sc5rO70BZV7+ksmZbB+1KzyiZp2VroPw7Lm1ovXBU2JYWIWXmNY+gDudvyZXZHE+6cG47Q==
+"@fontsource/source-code-pro@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.5.1.tgz#7be223bf73e489330e5ad97de430251cda4ff0fb"
+  integrity sha512-NVTR9MBd5Dkzd6JDolLft0KM92RISbw0rhNKUuywGMxovAD7LypE5Cb4u0+lAylV3tRzQkLAsspCwMLzclscdQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
