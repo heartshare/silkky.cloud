@@ -52,7 +52,7 @@
     "shx": "^0.3.3"
   },
   "devDependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "graceful-fs": "^4.2.8",
     "upath": "^2.0.1"
   }
