@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "express": "^4.17.2",
-    "graceful-fs": "^4.2.8",
+    "graceful-fs": "^4.2.9",
     "upath": "^2.0.1"
   }
 }
